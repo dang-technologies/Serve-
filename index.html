@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servé Beauty Lounge</title>
+  <meta name="description" content="Servé Beauty Lounge – gelé, forlængelse, nail art og pedicure. Prøv dit look og book din tid online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Spring til indhold</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Servé Beauty Lounge, til toppen">Servé</a>
+    <nav aria-label="Hovedmenu">
+      <a href="#proev">Prøv et look</a>
+      <a href="#priser">Priser</a>
+      <a href="#looks">Looks</a>
+      <a href="#besoeg">Find os</a>
+    </nav>
+    <a class="btn btn-small" data-booking href="#">Book tid</a>
+  </header>
+
+  <main id="main">
+    <!-- HERO + TRY-ON -->
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <h1>Servé <span>Beauty Lounge</span></h1>
+        <p class="lede">Gelé, forlængelse og nail art i et lille studie med god tid til dig. Find dit næste look her, og book det med det samme.</p>
+        <div class="hero-actions">
+          <a class="btn" data-booking href="#">Book din tid</a>
+          <a class="link" href="#priser">Se priser</a>
+        </div>
+        <p class="status" data-status hidden><span class="dot"></span><span data-status-text></span></p>
+      </div>
+
+      <div class="studio" id="proev" aria-labelledby="studio-title">
+        <h2 class="studio-title" id="studio-title">Prøv dit look</h2>
+
+        <div class="stage" id="stage">
+          <div class="nails" id="nails" data-shape="almond" data-finish="gloss" role="img" aria-label="Fem negle">
+            <span class="nail n1"><i class="paint"></i><i class="paint"></i><i class="fx"></i></span>
+            <span class="nail n2"><i class="paint"></i><i class="paint"></i><i class="fx"></i></span>
+            <span class="nail n3"><i class="paint"></i><i class="paint"></i><i class="fx"></i></span>
+            <span class="nail n4"><i class="paint"></i><i class="paint"></i><i class="fx"></i></span>
+            <span class="nail n5"><i class="paint"></i><i class="paint"></i><i class="fx"></i></span>
+          </div>
+        </div>
+
+        <form class="controls" id="controls">
+          <fieldset class="colors">
+            <legend>Farve</legend>
+            <div class="swatches" id="swatches"></div>
+          </fieldset>
+          <fieldset>
+            <legend>Finish</legend>
+            <div class="pills" id="finishes"></div>
+          </fieldset>
+          <fieldset>
+            <legend>Form</legend>
+            <div class="pills" id="shapes"></div>
+          </fieldset>
+        </form>
+
+        <div class="look-bar">
+          <p aria-live="polite"><span class="look-label">Dit look</span> <strong id="look-name">Strawberry, almond</strong></p>
+          <button class="btn" type="button" id="book-look">Book dette look</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICE CALCULATOR -->
+    <section class="prices" id="priser" aria-labelledby="prices-title">
+      <div class="section-head">
+        <h2 id="prices-title">Priser og tider</h2>
+        <p>Vælg en behandling og det, du vil have med. Pris og tid regnes ud med det samme.</p>
+      </div>
+
+      <div class="calc">
+        <div class="calc-main">
+          <div class="tabs" role="tablist" aria-label="Kategori" id="tabs">
+            <span class="tab-ink" aria-hidden="true"></span>
+          </div>
+          <fieldset class="treatments" id="treatments">
+            <legend class="sr">Behandling</legend>
+          </fieldset>
+          <fieldset class="addons" id="addons">
+            <legend>Tilvalg</legend>
+          </fieldset>
+        </div>
+
+        <aside class="summary" aria-labelledby="summary-title">
+          <h3 id="summary-title">Din tid</h3>
+          <ul class="summary-lines" id="summary-lines"></ul>
+          <p class="summary-look" id="summary-look" hidden></p>
+          <div class="totals">
+            <div><span>Pris</span><strong><span id="total-price">0</span> kr</strong></div>
+            <div><span>Tid</span><strong>ca. <span id="total-time">0</span> min</strong></div>
+          </div>
+          <button class="btn btn-wide" type="button" id="book-summary">Book denne tid</button>
+          <p class="fine">Alle priser er inkl. moms.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- LOOKS GALLERY -->
+    <section class="looks" id="looks" aria-labelledby="looks-title">
+      <div class="section-head">
+        <h2 id="looks-title">Looks fra studiet</h2>
+        <p>Tryk på et look for at prøve det i toppen. Nye sæt hver uge på <a class="link" data-instagram href="https://www.instagram.com/ss_nailstudio_/" target="_blank" rel="noopener">Instagram</a>.</p>
+      </div>
+      <div class="chips" role="group" aria-label="Filtrér looks" id="chips"></div>
+      <ul class="look-grid" id="look-grid"></ul>
+    </section>
+
+    <!-- VISIT -->
+    <section class="visit" id="besoeg" aria-labelledby="visit-title">
+      <div class="section-head">
+        <h2 id="visit-title">Find os</h2>
+      </div>
+      <div class="visit-grid">
+        <div>
+          <h3>Adresse</h3>
+          <p>Gadenavn 12<br>0000 By</p>
+        </div>
+        <div>
+          <h3>Åbningstider</h3>
+          <dl class="hours" id="hours"></dl>
+        </div>
+        <div>
+          <h3>Kontakt</h3>
+          <p><a class="link" data-instagram href="https://www.instagram.com/ss_nailstudio_/" target="_blank" rel="noopener">@ss_nailstudio_</a><br>+45 00 00 00 00</p>
+        </div>
+      </div>
+
+      <div class="closing">
+        <p>Klar til nye negle?</p>
+        <a class="btn btn-light" data-booking href="#">Book tid</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Servé Beauty Lounge</span>
+    <a class="link" data-instagram href="https://www.instagram.com/ss_nailstudio_/" target="_blank" rel="noopener">Instagram</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

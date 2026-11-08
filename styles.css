@@ -507,3 +507,14 @@ h3 { font: 500 1.25rem/1.25 var(--display); letter-spacing: -.015em; }
   border: 1px solid var(--line); color: var(--plum-soft);
   font-size: .75rem; letter-spacing: .02em; white-space: nowrap;
 }
+
+/* ---------- Real-info additions ---------- */
+a.float-card { text-decoration: none; color: inherit; }
+.price-note { margin: -16px 0 28px; text-align: left; font-size: .875rem; color: var(--plum-soft); }
+.socials { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+.map-label { position: relative; align-self: end; margin-bottom: 14px; font-weight: 500; }
+.map { place-items: end start; align-content: end; gap: 0; }
+@media (max-width: 600px) {
+  .tabs.tabs-3 { grid-template-columns: repeat(3, 1fr); }
+  .tabs.tabs-3 button { padding: 10px 4px; font-size: .875rem; }
+}

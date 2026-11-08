@@ -1,5 +1,5 @@
-// Sæt salonens booking-link her (fx Planway, Fresha, Booksy, EasyTime…).
-const BOOKING_URL = '';
+// Salonens bookingside på Planway.
+const BOOKING_URL = 'https://servebeautylounge.planway.com/';
 
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const $ = (s, el = document) => el.querySelector(s);
@@ -99,6 +99,7 @@ function checkCounters() {
   });
   if (!counters.length) removeEventListener('scroll', checkCounters);
 }
+if (STATIC || reduceMotion) { counters.forEach(runCount); counters = []; }
 addEventListener('scroll', checkCounters, { passive: true });
 checkCounters();
 
@@ -203,40 +204,3 @@ $('#masonry').addEventListener('click', (e) => {
 });
 $('#lb-close').addEventListener('click', () => lb.close());
 lb.addEventListener('click', (e) => { if (e.target === lb) lb.close(); });
-
-/* ---------- Opening hours ---------- */
-const HOURS = [null, [10, 18], [10, 18], [10, 18], [10, 18], [10, 18], [10, 15]]; // 0 = søndag
-const DAYS = ['Søndag', 'Mandag', 'Tirsdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lørdag'];
-const pad = (h) => `${h}`.padStart(2, '0');
-const parts = new Intl.DateTimeFormat('en-GB', {
-  timeZone: 'Europe/Copenhagen', weekday: 'short', hour: 'numeric', minute: 'numeric', hourCycle: 'h23',
-}).formatToParts(new Date());
-const get = (t) => parts.find((p) => p.type === t).value;
-const now = {
-  day: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(get('weekday')),
-  hour: Number(get('hour')) + Number(get('minute')) / 60,
-};
-$('#hours').innerHTML = [1, 2, 3, 4, 5, 6, 0].map((d) => {
-  const h = HOURS[d];
-  const cls = d === now.day ? ' class="today"' : '';
-  return `<dt${cls}>${DAYS[d]}</dt><dd${cls}>${h ? `${pad(h[0])}–${pad(h[1])}` : 'Lukket'}</dd>`;
-}).join('');
-(function status() {
-  const el = $('[data-status]');
-  const today = HOURS[now.day];
-  let text;
-  let open = false;
-  if (today && now.hour >= today[0] && now.hour < today[1]) {
-    open = true;
-    text = `Åbent nu, til kl. ${pad(today[1])}`;
-  } else {
-    let d = now.day;
-    let offset = 0;
-    if (!(today && now.hour < today[0])) { do { d = (d + 1) % 7; offset++; } while (!HOURS[d]); }
-    const when = offset === 0 ? 'i dag' : offset === 1 ? 'i morgen' : DAYS[d].toLowerCase();
-    text = `Lukket nu, åbner ${when} kl. ${pad(HOURS[d][0])}`;
-  }
-  el.classList.toggle('open', open);
-  $('[data-status-text]', el).textContent = text;
-  el.hidden = false;
-})();

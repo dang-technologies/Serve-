@@ -3,153 +3,486 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Servé Beauty Lounge</title>
-  <meta name="description" content="Servé Beauty Lounge – gelé, forlængelse, nail art og pedicure. Prøv dit look og book din tid online.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Servé Beauty Lounge – Neglesalon | Gelé, forlængelse, nail art & pedicure</title>
+  <meta name="description" content="Servé Beauty Lounge er en neglesalon med fokus på hygiejne, holdbarhed og smukke detaljer. Gelé, negleforlængelse, nail art, manicure og pedicure. Book online på under et minut.">
+  <meta name="keywords" content="neglesalon, gelé negle, negleforlængelse, nail art, manicure, pedicure, French manicure, negle book online">
+  <link rel="canonical" href="https://www.servebeautylounge.dk/">
+  <meta name="theme-color" content="#f7f2f3">
+  <!-- DEMO: fjern noindex og .demo-badge, når rigtige anmeldelser, tal og kontaktinfo er sat ind. -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:site_name" content="Servé Beauty Lounge">
+  <meta property="og:title" content="Servé Beauty Lounge – Neglesalon">
+  <meta property="og:description" content="Gelé, forlængelse, nail art og pedicure i en rolig lounge. Book din tid online.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1612887390768-fb02affea7a6?auto=format&fit=crop&w=1200&h=630&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <!-- Boska + Switzer fra Fontshare (gratis til kommerciel brug) -->
+  <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700,400i,500i&f[]=switzer@300,400,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Struktureret data. Adresse, telefon og koordinater er pladsholdere. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NailSalon",
+    "name": "Servé Beauty Lounge",
+    "url": "https://www.servebeautylounge.dk/",
+    "image": "https://images.unsplash.com/photo-1612887390768-fb02affea7a6?auto=format&fit=crop&w=1200&q=80",
+    "description": "Neglesalon med gelé, negleforlængelse, nail art, manicure og pedicure.",
+    "telephone": "+45 00 00 00 00",
+    "priceRange": "200–520 kr",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Gadenavn 12",
+      "postalCode": "0000",
+      "addressLocality": "By",
+      "addressCountry": "DK"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "15:00" }
+    ],
+    "sameAs": ["https://www.instagram.com/ss_nailstudio_/"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Behandlinger",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gelé på naturlige negle" }, "price": "350", "priceCurrency": "DKK" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Negleforlængelse, nyt sæt" }, "price": "450", "priceCurrency": "DKK" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pedicure med gelé" }, "price": "450", "priceCurrency": "DKK" }
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Hvor længe holder gelé?", "acceptedAnswer": { "@type": "Answer", "text": "Gelé holder typisk 3–4 uger. Vi anbefaler en opfyldning eller ny behandling efter 3–4 uger, så dine negle forbliver sunde." } },
+      { "@type": "Question", "name": "Skader gelé mine egne negle?", "acceptedAnswer": { "@type": "Answer", "text": "Nej, ikke når den lægges og fjernes korrekt. Vi filer skånsomt og fjerner altid gelé professionelt." } },
+      { "@type": "Question", "name": "Hvad hvis jeg skal aflyse?", "acceptedAnswer": { "@type": "Answer", "text": "Du kan aflyse eller flytte gratis senest 24 timer før din tid via bookingsystemet." } },
+      { "@type": "Question", "name": "Kan jeg få HEMA-fri produkter?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. Skriv det i bemærkningen ved booking, så bruger vi HEMA-fri gelé." } },
+      { "@type": "Question", "name": "Hvordan betaler jeg?", "acceptedAnswer": { "@type": "Answer", "text": "Du betaler i salonen med MobilePay eller kort, efter din behandling." } }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip" href="#main">Spring til indhold</a>
 
-  <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Servé Beauty Lounge, til toppen">Servé</a>
-    <nav aria-label="Hovedmenu">
-      <a href="#proev">Prøv et look</a>
+  <!-- Levende baggrund -->
+  <div class="aura" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <a class="logo" href="#top" aria-label="Servé Beauty Lounge, forside">
+      <span class="logo-mark">Servé</span><span class="logo-sub">Beauty Lounge</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Hovedmenu">
+      <a href="#behandlinger">Behandlinger</a>
+      <a href="#om">Om os</a>
+      <a href="#galleri">Galleri</a>
       <a href="#priser">Priser</a>
-      <a href="#looks">Looks</a>
-      <a href="#besoeg">Find os</a>
+      <a href="#anmeldelser">Anmeldelser</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="btn btn-small nav-cta" data-booking href="#">Book tid</a>
     </nav>
-    <a class="btn btn-small" data-booking href="#">Book tid</a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span class="sr">Menu</span>
+    </button>
   </header>
 
   <main id="main">
-    <!-- HERO + TRY-ON -->
-    <section class="hero" id="top">
+    <!-- HERO -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero-text">
-        <h1>Servé <span>Beauty Lounge</span></h1>
-        <p class="lede">Gelé, forlængelse og nail art i et lille studie med god tid til dig. Find dit næste look her, og book det med det samme.</p>
-        <div class="hero-actions">
-          <a class="btn" data-booking href="#">Book din tid</a>
-          <a class="link" href="#priser">Se priser</a>
+        <p class="kicker" data-load>Neglesalon · Gelé · Forlængelse · Nail art</p>
+        <h1 id="hero-title" data-load>Smukke negle, lavet i ro og med omhu</h1>
+        <p class="lede" data-load>Hos Servé Beauty Lounge får du negle, der holder i ugevis. Vi arbejder med sterile redskaber, skånsomme produkter og god tid til hver kunde.</p>
+        <div class="hero-actions" data-load>
+          <a class="btn" data-booking href="#">Book din tid online</a>
+          <a class="btn btn-ghost" href="#priser">Se priser</a>
         </div>
+        <ul class="hero-trust" data-load>
+          <li><span class="stars" aria-hidden="true">★★★★★</span> 4,9 ud af 5 på Google</li>
+          <li>Steriliserede redskaber</li>
+          <li>Book på under 1 minut</li>
+        </ul>
+      </div>
+
+      <div class="hero-art" aria-hidden="false">
+        <figure class="arch" data-reveal-img>
+          <img src="https://images.unsplash.com/photo-1612887390768-fb02affea7a6?auto=format&fit=crop&w=900&h=1200&q=80"
+               alt="Hånd med lyserøde almond-negle på hvid stof" width="900" height="1200" fetchpriority="high">
+        </figure>
+        <figure class="bubble" data-reveal-img>
+          <img src="https://images.unsplash.com/photo-1610992015762-45dca7fa3a85?auto=format&fit=crop&w=500&h=500&q=80"
+               alt="Hånd med nude manicure på blødt tæppe" width="500" height="500">
+        </figure>
+        <svg class="seal" viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+          <text><textPath href="#circle" textLength="488">SERVÉ BEAUTY LOUNGE ✦ NAILS ✦ CARE ✦ </textPath></text>
+          <circle cx="100" cy="100" r="34" class="seal-dot"/>
+          <text x="100" y="108" text-anchor="middle" class="seal-s">S</text>
+        </svg>
+        <div class="float-card">
+          <strong>Ledige tider</strong>
+          <span>i denne uge</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Gelé</span><i>✦</i><span>Negleforlængelse</span><i>✦</i><span>Nail art</span><i>✦</i><span>French manicure</span><i>✦</i><span>Pedicure</span><i>✦</i><span>Chrome & cat eye</span><i>✦</i>
+        <span>Gelé</span><i>✦</i><span>Negleforlængelse</span><i>✦</i><span>Nail art</span><i>✦</i><span>French manicure</span><i>✦</i><span>Pedicure</span><i>✦</i><span>Chrome & cat eye</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <section class="stats" aria-label="Servé i tal">
+      <div class="stat" data-reveal><strong><span data-count="1200">0</span>+</strong><span>tilfredse kunder</span></div>
+      <div class="stat" data-reveal><strong><span data-count="4.9" data-decimals="1">0</span></strong><span>gennemsnit på Google</span></div>
+      <div class="stat" data-reveal><strong><span data-count="5">0</span> år</strong><span>erfaring med negle</span></div>
+      <div class="stat" data-reveal><strong><span data-count="3">0</span> uger+</strong><span>holdbarhed på gelé</span></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="om" aria-labelledby="about-title">
+      <div class="about-media">
+        <figure class="about-main" data-reveal-img>
+          <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=900&h=1100&q=80"
+               alt="Negletekniker lægger gelé på en kundes negle i salonen" width="900" height="1100" loading="lazy">
+        </figure>
+        <figure class="about-small" data-reveal-img>
+          <img src="https://images.unsplash.com/photo-1619607146034-5a05296c8f9a?auto=format&fit=crop&w=600&h=600&q=80"
+               alt="Hylder med neglelak i mange farver" width="600" height="600" loading="lazy">
+        </figure>
+      </div>
+      <div class="about-text" data-reveal>
+        <p class="kicker">Om Servé</p>
+        <h2 id="about-title">En lounge, hvor du kan slappe af, mens vi tager os af detaljerne</h2>
+        <p>Servé Beauty Lounge er et lille, personligt neglestudie. Vi tror på, at smukke negle starter med sunde negle, og derfor bruger vi tid på grundig forberedelse, før farven kommer på.</p>
+        <p>Uanset om du ønsker en diskret nude, en klassisk French eller håndmalet nail art, får du en konsultation, hvor vi finder form, længde og farve, der passer til dig og din hverdag.</p>
+        <ul class="checks">
+          <li>Certificeret negletekniker</li>
+          <li>Hypoallergene, HEMA-fri produkter efter ønske</li>
+          <li>Engangsfile og steriliserede redskaber til hver kunde</li>
+        </ul>
+        <p class="signature">Servé</p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services section" id="behandlinger" aria-labelledby="services-title">
+      <div class="section-head" data-reveal>
+        <p class="kicker">Behandlinger</p>
+        <h2 id="services-title">Negle til enhver anledning</h2>
+        <p>Fra hverdagens holdbare gelé til festens håndmalede detaljer. Alle behandlinger inkluderer neglebåndspleje og formgivning.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service" data-reveal>
+          <figure><img src="https://images.unsplash.com/photo-1630843599725-32ead7671867?auto=format&fit=crop&w=700&h=520&q=80" alt="Hvid gelé manicure på naturlige negle" width="700" height="520" loading="lazy"></figure>
+          <div class="service-body">
+            <h3>Gelé på naturlige negle</h3>
+            <p>Holdbar glans i 3–4 uger uden at skade dine egne negle. Inkl. neglebåndspleje.</p>
+            <p class="meta"><span>fra 350 kr</span><span>60 min</span></p>
+          </div>
+        </article>
+        <article class="service" data-reveal>
+          <figure><img src="https://images.unsplash.com/photo-1736434518489-0eb84070017f?auto=format&fit=crop&w=700&h=520&q=80" alt="Lange almond-negle i nude farve" width="700" height="520" loading="lazy"></figure>
+          <div class="service-body">
+            <h3>Negleforlængelse</h3>
+            <p>Naturlig længde med gelé eller tips. Formet som almond, square, coffin eller oval.</p>
+            <p class="meta"><span>fra 450 kr</span><span>90 min</span></p>
+          </div>
+        </article>
+        <article class="service" data-reveal>
+          <figure><img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=700&h=520&q=80" alt="Nail art i mauve, hvid og sølv glitter" width="700" height="520" loading="lazy"></figure>
+          <div class="service-body">
+            <h3>Nail art</h3>
+            <p>Håndmalede detaljer, chrome, cat eye, glitter og sten. Vi tegner gerne efter dit billede.</p>
+            <p class="meta"><span>fra 20 kr pr. negl</span><span>+15 min</span></p>
+          </div>
+        </article>
+        <article class="service" data-reveal>
+          <figure><img src="https://images.unsplash.com/photo-1762373349045-c2decd4ec3f3?auto=format&fit=crop&w=700&h=520&q=80" alt="Klassisk French manicure med lille blomst" width="700" height="520" loading="lazy"></figure>
+          <div class="service-body">
+            <h3>French manicure</h3>
+            <p>Den tidløse klassiker med en blød, ren linje. Også som baby boomer eller farvet French.</p>
+            <p class="meta"><span>fra 400 kr</span><span>75 min</span></p>
+          </div>
+        </article>
+        <article class="service" data-reveal>
+          <figure><img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&w=700&h=520&q=80" alt="Fødder med blomster til pedicure" width="700" height="520" loading="lazy"></figure>
+          <div class="service-body">
+            <h3>Pedicure med gelé</h3>
+            <p>Fodbad, fil, hård hud og neglebånd, afsluttet med gelé der holder hele sommeren.</p>
+            <p class="meta"><span>fra 450 kr</span><span>75 min</span></p>
+          </div>
+        </article>
+        <article class="service" data-reveal>
+          <figure><img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=700&h=520&q=80" alt="Plejede hænder med naturlige negle" width="700" height="520" loading="lazy"></figure>
+          <div class="service-body">
+            <h3>Manicure og aftagning</h3>
+            <p>Skånsom aftagning af gammelt sæt, pleje og styrkende behandling af dine egne negle.</p>
+            <p class="meta"><span>fra 200 kr</span><span>30 min</span></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section class="why section" aria-labelledby="why-title">
+      <div class="why-intro" data-reveal>
+        <p class="kicker">Derfor vælger kunderne os</p>
+        <h2 id="why-title">Tryghed i hver eneste detalje</h2>
+        <figure class="why-img" data-reveal-img>
+          <img src="https://images.unsplash.com/photo-1544816135-b44f18b3c5d6?auto=format&fit=crop&w=800&h=600&q=80" alt="Lyserød neglelak på hvid baggrund" width="800" height="600" loading="lazy">
+        </figure>
+      </div>
+      <div class="why-list">
+        <div class="why-item" data-reveal>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          <h3>Hygiejne først</h3>
+          <p>Redskaber steriliseres i autoklave, og file og buffere er til engangsbrug. Altid.</p>
+        </div>
+        <div class="why-item" data-reveal>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6v4l3 3v10a1 1 0 01-1 1H7a1 1 0 01-1-1V10l3-3V3z"/><path d="M6 14h12"/></svg>
+          <h3>Kvalitetsprodukter</h3>
+          <p>Professionelle, EU-godkendte geler. HEMA-fri alternativer til sensitive negle.</p>
+        </div>
+        <div class="why-item" data-reveal>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <h3>God tid til dig</h3>
+          <p>Vi booker aldrig tæt. Du får ro, en kop te og en behandling uden hast.</p>
+        </div>
+        <div class="why-item" data-reveal>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg>
+          <h3>Holdbarhedsgaranti</h3>
+          <p>Løsner en negl inden for 7 dage, reparerer vi den gratis.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process section" aria-labelledby="process-title">
+      <div class="section-head center" data-reveal>
+        <p class="kicker">Sådan foregår det</p>
+        <h2 id="process-title">Fra booking til færdige negle</h2>
+      </div>
+      <ol class="steps">
+        <li data-reveal><span class="step-no">1</span><h3>Book online</h3><p>Vælg behandling og tid i kalenderen. Du får en bekræftelse med det samme.</p></li>
+        <li data-reveal><span class="step-no">2</span><h3>Konsultation</h3><p>Vi taler form, længde og farve, og ser på dine negles behov.</p></li>
+        <li data-reveal><span class="step-no">3</span><h3>Behandling</h3><p>Forberedelse, pleje og påføring. Læn dig tilbage og nyd det.</p></li>
+        <li data-reveal><span class="step-no">4</span><h3>Efterpleje</h3><p>Du får råd til at holde neglene smukke, og vi minder dig om næste tid.</p></li>
+      </ol>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery section" id="galleri" aria-labelledby="gallery-title">
+      <div class="section-head" data-reveal>
+        <p class="kicker">Galleri</p>
+        <h2 id="gallery-title">Inspiration fra studiet</h2>
+        <p>Tryk på et billede for at se det større. Se nye sæt hver uge på <a class="link" data-instagram href="https://www.instagram.com/ss_nailstudio_/" target="_blank" rel="noopener">Instagram</a>.</p>
+      </div>
+      <div class="masonry" id="masonry">
+        <button class="tile t-tall" type="button" data-reveal><img src="https://images.unsplash.com/photo-1769687209448-025548dfca8b?auto=format&fit=crop&w=700&h=950&q=80" alt="Negle med perler og detaljer holder en plante" width="700" height="950" loading="lazy"></button>
+        <button class="tile" type="button" data-reveal><img src="https://images.unsplash.com/photo-1610992015836-7c249d75782d?auto=format&fit=crop&w=700&h=600&q=80" alt="Nude negle og guldur" width="700" height="600" loading="lazy"></button>
+        <button class="tile" type="button" data-reveal><img src="https://images.unsplash.com/photo-1630843599725-32ead7671867?auto=format&fit=crop&w=700&h=600&q=80" alt="Hvid manicure med ring" width="700" height="600" loading="lazy"></button>
+        <button class="tile t-tall" type="button" data-reveal><img src="https://images.unsplash.com/photo-1758178309407-6562d1687b01?auto=format&fit=crop&w=700&h=950&q=80" alt="Negle i pastel med halskæde" width="700" height="950" loading="lazy"></button>
+        <button class="tile" type="button" data-reveal><img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=700&h=600&q=80" alt="Mauve og glitter negle" width="700" height="600" loading="lazy"></button>
+        <button class="tile" type="button" data-reveal><img src="https://images.unsplash.com/photo-1762373349045-c2decd4ec3f3?auto=format&fit=crop&w=700&h=600&q=80" alt="French manicure med blomst" width="700" height="600" loading="lazy"></button>
+        <button class="tile" type="button" data-reveal><img src="https://images.unsplash.com/photo-1736434518489-0eb84070017f?auto=format&fit=crop&w=700&h=600&q=80" alt="Lange nude negle med blomst" width="700" height="600" loading="lazy"></button>
+        <button class="tile" type="button" data-reveal><img src="https://images.unsplash.com/photo-1612887390768-fb02affea7a6?auto=format&fit=crop&w=700&h=600&q=80" alt="Lyserøde almond negle" width="700" height="600" loading="lazy"></button>
+      </div>
+    </section>
+
+    <!-- PRICES -->
+    <section class="prices section" id="priser" aria-labelledby="prices-title">
+      <div class="prices-card" data-reveal>
+        <div class="section-head">
+          <p class="kicker">Prisliste</p>
+          <h2 id="prices-title">Priser</h2>
+          <p>Alle priser er inkl. moms. Endelig pris aftales ved konsultationen, hvis du ønsker ekstra detaljer.</p>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Priskategori" id="tabs">
+          <button role="tab" type="button" id="tab-hands" aria-controls="panel-hands" aria-selected="true">Hænder</button>
+          <button role="tab" type="button" id="tab-ext" aria-controls="panel-ext" aria-selected="false" tabindex="-1">Forlængelse</button>
+          <button role="tab" type="button" id="tab-feet" aria-controls="panel-feet" aria-selected="false" tabindex="-1">Fødder</button>
+          <button role="tab" type="button" id="tab-art" aria-controls="panel-art" aria-selected="false" tabindex="-1">Nail art</button>
+          <span class="tab-ink" aria-hidden="true"></span>
+        </div>
+        <div class="panel" id="panel-hands" role="tabpanel" aria-labelledby="tab-hands">
+          <dl class="price-list">
+            <div><dt>Gelé på naturlige negle <small>60 min</small></dt><dd>350 kr</dd></div>
+            <div><dt>Gelé med French <small>75 min</small></dt><dd>400 kr</dd></div>
+            <div><dt>Opfyldning, gelé <small>60 min</small></dt><dd>320 kr</dd></div>
+            <div><dt>Manicure uden lak <small>30 min</small></dt><dd>250 kr</dd></div>
+            <div><dt>Aftagning med manicure <small>30 min</small></dt><dd>200 kr</dd></div>
+          </dl>
+        </div>
+        <div class="panel" id="panel-ext" role="tabpanel" aria-labelledby="tab-ext" hidden>
+          <dl class="price-list">
+            <div><dt>Nyt sæt, kort til medium <small>90 min</small></dt><dd>450 kr</dd></div>
+            <div><dt>Nyt sæt, lang <small>105 min</small></dt><dd>520 kr</dd></div>
+            <div><dt>Opfyldning <small>75 min</small></dt><dd>380 kr</dd></div>
+            <div><dt>Reparation pr. negl <small>10 min</small></dt><dd>40 kr</dd></div>
+          </dl>
+        </div>
+        <div class="panel" id="panel-feet" role="tabpanel" aria-labelledby="tab-feet" hidden>
+          <dl class="price-list">
+            <div><dt>Pedicure med gelé <small>75 min</small></dt><dd>450 kr</dd></div>
+            <div><dt>Gelé på tæer <small>45 min</small></dt><dd>320 kr</dd></div>
+            <div><dt>Pedicure uden lak <small>50 min</small></dt><dd>350 kr</dd></div>
+          </dl>
+        </div>
+        <div class="panel" id="panel-art" role="tabpanel" aria-labelledby="tab-art" hidden>
+          <dl class="price-list">
+            <div><dt>Chrome eller cat eye <small>alle negle</small></dt><dd>+60 kr</dd></div>
+            <div><dt>Glitter <small>alle negle</small></dt><dd>+40 kr</dd></div>
+            <div><dt>Håndmalet design <small>pr. negl</small></dt><dd>fra 20 kr</dd></div>
+            <div><dt>Sten og charms <small>pr. negl</small></dt><dd>fra 30 kr</dd></div>
+          </dl>
+        </div>
+        <a class="btn" data-booking href="#">Book en behandling</a>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS (pladsholdere – erstattes med rigtige anmeldelser) -->
+    <section class="reviews section" id="anmeldelser" aria-labelledby="reviews-title">
+      <div class="section-head center" data-reveal>
+        <p class="kicker">Anmeldelser</p>
+        <h2 id="reviews-title">Det siger vores kunder</h2>
+        <p class="rating"><span class="stars" aria-hidden="true">★★★★★</span> 4,9 ud af 5 baseret på anmeldelser på Google</p>
+      </div>
+      <div class="slider" id="slider" aria-roledescription="karrusel" aria-label="Kundeanmeldelser">
+        <div class="slides" id="slides">
+          <figure class="review" aria-roledescription="slide">
+            <blockquote>“Mine negle har aldrig holdt så længe. Fire uger, og de ser stadig nylavede ud. Og så er stemningen i salonen helt utrolig rolig.”</blockquote>
+            <figcaption><strong>Camilla</strong><span>Gelé med French</span></figcaption>
+          </figure>
+          <figure class="review" aria-roledescription="slide">
+            <blockquote>“Hun tog sig virkelig tid til at forstå, hvad jeg ville have. Resultatet blev præcis som billedet, jeg viste. Jeg kommer igen.”</blockquote>
+            <figcaption><strong>Sara</strong><span>Forlængelse og nail art</span></figcaption>
+          </figure>
+          <figure class="review" aria-roledescription="slide">
+            <blockquote>“Rent, hyggeligt og super professionelt. Man kan se, at hygiejnen er i top. Den bedste pedicure, jeg har fået.”</blockquote>
+            <figcaption><strong>Mette</strong><span>Pedicure med gelé</span></figcaption>
+          </figure>
+          <figure class="review" aria-roledescription="slide">
+            <blockquote>“Jeg har sensitive negle, og her fik jeg en HEMA-fri gelé uden problemer. Endelig et sted, jeg tør komme fast.”</blockquote>
+            <figcaption><strong>Louise</strong><span>Gelé på naturlige negle</span></figcaption>
+          </figure>
+        </div>
+        <div class="slider-nav">
+          <button type="button" class="round" data-slide="-1" aria-label="Forrige anmeldelse"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <div class="dots" id="dots"></div>
+          <button type="button" class="round" data-slide="1" aria-label="Næste anmeldelse"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section" id="faq" aria-labelledby="faq-title">
+      <div class="faq-intro" data-reveal>
+        <p class="kicker">Spørgsmål og svar</p>
+        <h2 id="faq-title">Godt at vide før dit besøg</h2>
+        <p>Finder du ikke dit svar, så skriv til os på <a class="link" data-instagram href="https://www.instagram.com/ss_nailstudio_/" target="_blank" rel="noopener">Instagram</a>.</p>
+      </div>
+      <div class="faq-list" data-reveal>
+        <details><summary>Hvor længe holder gelé?</summary><p>Gelé holder typisk 3–4 uger. Vi anbefaler en opfyldning eller ny behandling efter 3–4 uger, så dine negle forbliver sunde.</p></details>
+        <details><summary>Skader gelé mine egne negle?</summary><p>Nej, ikke når den lægges og fjernes korrekt. Vi filer skånsomt og fjerner altid gelé professionelt, så dine egne negle bevares.</p></details>
+        <details><summary>Hvad hvis jeg skal aflyse?</summary><p>Du kan aflyse eller flytte gratis senest 24 timer før din tid via bookingsystemet.</p></details>
+        <details><summary>Kan jeg få HEMA-fri produkter?</summary><p>Ja. Har du allergi eller sensitive negle, så skriv det i bemærkningen ved booking, så bruger vi HEMA-fri gelé.</p></details>
+        <details><summary>Hvordan betaler jeg?</summary><p>Du betaler i salonen med MobilePay eller kort, efter din behandling.</p></details>
+        <details><summary>Må jeg tage et billede med af det, jeg ønsker?</summary><p>Meget gerne. Et billede gør det nemt at ramme præcis den farve, form og stil, du drømmer om.</p></details>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="kontakt" aria-labelledby="contact-title">
+      <div class="contact-info" data-reveal>
+        <p class="kicker">Find os</p>
+        <h2 id="contact-title">Besøg loungen</h2>
         <p class="status" data-status hidden><span class="dot"></span><span data-status-text></span></p>
-      </div>
-
-      <div class="studio" id="proev" aria-labelledby="studio-title">
-        <h2 class="studio-title" id="studio-title">Prøv dit look</h2>
-
-        <div class="stage" id="stage">
-          <div class="nails" id="nails" data-shape="almond" data-finish="gloss" role="img" aria-label="Fem negle">
-            <span class="nail n1"><i class="paint"></i><i class="paint"></i><i class="fx"></i></span>
-            <span class="nail n2"><i class="paint"></i><i class="paint"></i><i class="fx"></i></span>
-            <span class="nail n3"><i class="paint"></i><i class="paint"></i><i class="fx"></i></span>
-            <span class="nail n4"><i class="paint"></i><i class="paint"></i><i class="fx"></i></span>
-            <span class="nail n5"><i class="paint"></i><i class="paint"></i><i class="fx"></i></span>
+        <div class="contact-grid">
+          <div>
+            <h3>Adresse</h3>
+            <address>Gadenavn 12<br>0000 By</address>
+          </div>
+          <div>
+            <h3>Kontakt</h3>
+            <p><a class="link" href="tel:+4500000000">+45 00 00 00 00</a><br><a class="link" data-instagram href="https://www.instagram.com/ss_nailstudio_/" target="_blank" rel="noopener">@ss_nailstudio_</a></p>
+          </div>
+          <div class="hours-wrap">
+            <h3>Åbningstider</h3>
+            <dl class="hours" id="hours"></dl>
           </div>
         </div>
-
-        <form class="controls" id="controls">
-          <fieldset class="colors">
-            <legend>Farve</legend>
-            <div class="swatches" id="swatches"></div>
-          </fieldset>
-          <fieldset>
-            <legend>Finish</legend>
-            <div class="pills" id="finishes"></div>
-          </fieldset>
-          <fieldset>
-            <legend>Form</legend>
-            <div class="pills" id="shapes"></div>
-          </fieldset>
-        </form>
-
-        <div class="look-bar">
-          <p aria-live="polite"><span class="look-label">Dit look</span> <strong id="look-name">Strawberry, almond</strong></p>
-          <button class="btn" type="button" id="book-look">Book dette look</button>
+      </div>
+      <div class="map" data-reveal>
+        <div class="map-art" aria-hidden="true">
+          <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><path d="M0 210 C80 190 120 240 210 200 S330 150 400 170" /><path d="M60 0 C90 80 70 160 120 300" /><path d="M260 0 C250 90 300 170 280 300" /><path d="M0 90 C120 110 260 60 400 100" /></svg>
+          <span class="pin"></span>
         </div>
+        <a class="btn btn-light" href="https://maps.google.com/?q=Gadenavn+12" target="_blank" rel="noopener">Åbn i Google Maps</a>
       </div>
     </section>
 
-    <!-- PRICE CALCULATOR -->
-    <section class="prices" id="priser" aria-labelledby="prices-title">
-      <div class="section-head">
-        <h2 id="prices-title">Priser og tider</h2>
-        <p>Vælg en behandling og det, du vil have med. Pris og tid regnes ud med det samme.</p>
-      </div>
-
-      <div class="calc">
-        <div class="calc-main">
-          <div class="tabs" role="tablist" aria-label="Kategori" id="tabs">
-            <span class="tab-ink" aria-hidden="true"></span>
-          </div>
-          <fieldset class="treatments" id="treatments">
-            <legend class="sr">Behandling</legend>
-          </fieldset>
-          <fieldset class="addons" id="addons">
-            <legend>Tilvalg</legend>
-          </fieldset>
-        </div>
-
-        <aside class="summary" aria-labelledby="summary-title">
-          <h3 id="summary-title">Din tid</h3>
-          <ul class="summary-lines" id="summary-lines"></ul>
-          <p class="summary-look" id="summary-look" hidden></p>
-          <div class="totals">
-            <div><span>Pris</span><strong><span id="total-price">0</span> kr</strong></div>
-            <div><span>Tid</span><strong>ca. <span id="total-time">0</span> min</strong></div>
-          </div>
-          <button class="btn btn-wide" type="button" id="book-summary">Book denne tid</button>
-          <p class="fine">Alle priser er inkl. moms.</p>
-        </aside>
-      </div>
-    </section>
-
-    <!-- LOOKS GALLERY -->
-    <section class="looks" id="looks" aria-labelledby="looks-title">
-      <div class="section-head">
-        <h2 id="looks-title">Looks fra studiet</h2>
-        <p>Tryk på et look for at prøve det i toppen. Nye sæt hver uge på <a class="link" data-instagram href="https://www.instagram.com/ss_nailstudio_/" target="_blank" rel="noopener">Instagram</a>.</p>
-      </div>
-      <div class="chips" role="group" aria-label="Filtrér looks" id="chips"></div>
-      <ul class="look-grid" id="look-grid"></ul>
-    </section>
-
-    <!-- VISIT -->
-    <section class="visit" id="besoeg" aria-labelledby="visit-title">
-      <div class="section-head">
-        <h2 id="visit-title">Find os</h2>
-      </div>
-      <div class="visit-grid">
-        <div>
-          <h3>Adresse</h3>
-          <p>Gadenavn 12<br>0000 By</p>
-        </div>
-        <div>
-          <h3>Åbningstider</h3>
-          <dl class="hours" id="hours"></dl>
-        </div>
-        <div>
-          <h3>Kontakt</h3>
-          <p><a class="link" data-instagram href="https://www.instagram.com/ss_nailstudio_/" target="_blank" rel="noopener">@ss_nailstudio_</a><br>+45 00 00 00 00</p>
-        </div>
-      </div>
-
-      <div class="closing">
-        <p>Klar til nye negle?</p>
-        <a class="btn btn-light" data-booking href="#">Book tid</a>
+    <!-- CTA -->
+    <section class="cta" aria-labelledby="cta-title">
+      <img src="https://images.unsplash.com/photo-1602585578130-c9076e09330d?auto=format&fit=crop&w=1800&h=900&q=75" alt="" width="1800" height="900" loading="lazy">
+      <div class="cta-inner" data-reveal>
+        <h2 id="cta-title">Klar til dine nye negle?</h2>
+        <p>Find en ledig tid, der passer dig. Det tager under et minut.</p>
+        <a class="btn btn-light" data-booking href="#">Book tid nu</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <span>© <span id="year"></span> Servé Beauty Lounge</span>
-    <a class="link" data-instagram href="https://www.instagram.com/ss_nailstudio_/" target="_blank" rel="noopener">Instagram</a>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="logo-mark">Servé</p>
+        <p>Neglesalon med gelé, negleforlængelse, nail art, manicure og pedicure. Vi glæder os til at se dig.</p>
+      </div>
+      <nav aria-label="Sidefod">
+        <h3>Menu</h3>
+        <a href="#behandlinger">Behandlinger</a><a href="#priser">Priser</a><a href="#galleri">Galleri</a><a href="#faq">FAQ</a>
+      </nav>
+      <div>
+        <h3>Kontakt</h3>
+        <p>Gadenavn 12, 0000 By<br>+45 00 00 00 00</p>
+      </div>
+      <div>
+        <h3>Følg os</h3>
+        <p><a class="link" data-instagram href="https://www.instagram.com/ss_nailstudio_/" target="_blank" rel="noopener">Instagram</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Servé Beauty Lounge</span>
+      <span>Fotos: Unsplash</span>
+    </div>
   </footer>
 
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <!-- Lightbox -->
+  <dialog class="lightbox" id="lightbox" aria-label="Billede">
+    <img id="lightbox-img" alt="">
+    <button type="button" class="round lb-close" id="lb-close" aria-label="Luk"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </dialog>
 
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <p class="demo-badge">Demo · anmeldelser, tal og kontaktinfo er eksempler</p>
   <script src="script.js"></script>
 </body>
 </html>

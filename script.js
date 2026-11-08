@@ -126,7 +126,8 @@ function moveInk() {
   const a = $('[aria-selected="true"]', tabs);
   const ink = $('.tab-ink', tabs);
   ink.style.width = `${a.offsetWidth}px`;
-  ink.style.transform = `translateX(${a.offsetLeft}px)`;
+  ink.style.height = `${a.offsetHeight}px`;
+  ink.style.transform = `translate(${a.offsetLeft}px, ${a.offsetTop}px)`;
 }
 function selectTab(btn, focus) {
   tabBtns.forEach((b) => {
@@ -172,6 +173,15 @@ $$('[data-slide]').forEach((b) => b.addEventListener('click', () => { go(current
 $$('button', dots).forEach((d, k) => d.addEventListener('click', () => { go(k); auto(); }));
 $('#slider').addEventListener('mouseenter', () => clearInterval(timer));
 $('#slider').addEventListener('mouseleave', auto);
+// Swipe på mobil
+let touchX = null;
+slides.addEventListener('touchstart', (e) => { touchX = e.touches[0].clientX; }, { passive: true });
+slides.addEventListener('touchend', (e) => {
+  if (touchX === null) return;
+  const dx = e.changedTouches[0].clientX - touchX;
+  if (Math.abs(dx) > 40) { go(current + (dx < 0 ? 1 : -1)); auto(); }
+  touchX = null;
+}, { passive: true });
 go(0);
 auto();
 

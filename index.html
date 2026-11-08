@@ -22,8 +22,8 @@
   <link rel="preconnect" href="https://api.fontshare.com">
   <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
   <link rel="preconnect" href="https://images.unsplash.com">
-  <!-- Boska + Switzer fra Fontshare (gratis til kommerciel brug) -->
-  <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700,400i,500i&f[]=switzer@300,400,500&display=swap" rel="stylesheet">
+  <!-- Switzer fra Fontshare (gratis til kommerciel brug) – én skrift til hele siden -->
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@200,300,400,500,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
   <!-- Struktureret data. Adresse, telefon og koordinater er pladsholdere. -->
@@ -85,6 +85,7 @@
     <a class="logo" href="#top" aria-label="Servé Beauty Lounge, forside">
       <span class="logo-mark">Servé</span><span class="logo-sub">Beauty Lounge</span>
     </a>
+    <span class="demo-badge" title="Anmeldelser, tal og kontaktinfo er eksempler">Demo</span>
     <nav class="nav" id="nav" aria-label="Hovedmenu">
       <a href="#behandlinger">Behandlinger</a>
       <a href="#om">Om os</a>
@@ -482,7 +483,6 @@
   </dialog>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <p class="demo-badge">Demo · anmeldelser, tal og kontaktinfo er eksempler</p>
   <script src="script.js"></script>
 </body>
 </html>

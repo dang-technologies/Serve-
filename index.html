@@ -8,7 +8,7 @@
   <meta name="keywords" content="neglesalon Værløse, negle Værløse, gelé negle, franske negle, babyboomer negle, nail art, gelé design, negletekniker Værløse">
   <link rel="canonical" href="https://serve-beauty-lounge.vercel.app/">
   <meta name="theme-color" content="#f7f2f3">
-  <!-- DEMO: fjern noindex og .demo-badge, når rigtige billeder og anmeldelser er sat ind. -->
+  <!-- DEMO: fjern noindex og .demo-badge, når rigtige anmeldelser er sat ind. -->
   <meta name="robots" content="noindex, nofollow">
 
   <meta property="og:type" content="website">
@@ -16,12 +16,11 @@
   <meta property="og:site_name" content="Servé Beauty Lounge">
   <meta property="og:title" content="Servé Beauty Lounge – Neglesalon i Værløse">
   <meta property="og:description" content="Naturlige negle, franske negle og gelé design i Værløse. Book din tid online.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1612887390768-fb02affea7a6?auto=format&fit=crop&w=1200&h=630&q=80">
+  <meta property="og:image" content="https://serve-beauty-lounge.vercel.app/images/babyboomer-almond.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preconnect" href="https://api.fontshare.com">
   <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
-  <link rel="preconnect" href="https://images.unsplash.com">
   <!-- Switzer fra Fontshare (gratis til kommerciel brug) – én skrift til hele siden -->
   <link href="https://api.fontshare.com/v2/css?f[]=switzer@200,300,400,500,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -33,7 +32,7 @@
     "@type": "NailSalon",
     "name": "Servé Beauty Lounge",
     "url": "https://serve-beauty-lounge.vercel.app/",
-    "image": "https://images.unsplash.com/photo-1612887390768-fb02affea7a6?auto=format&fit=crop&w=1200&q=80",
+    "image": "https://serve-beauty-lounge.vercel.app/images/babyboomer-almond.jpg",
     "description": "Neglesalon i Værløse med certificeret negletekniker. Naturlige negle, franske/babyboomer negle og gelé design.",
     "telephone": "+4560148561",
     "priceRange": "150–800 kr",
@@ -95,7 +94,7 @@
     <a class="logo" href="#top" aria-label="Servé Beauty Lounge, forside">
       <span class="logo-mark">Servé</span><span class="logo-sub">Beauty Lounge</span>
     </a>
-    <span class="demo-badge" title="Billederne er stockfotos og anmeldelserne er eksempler">Demo</span>
+    <span class="demo-badge" title="Anmeldelserne er eksempler">Demo</span>
     <nav class="nav" id="nav" aria-label="Hovedmenu">
       <a href="#behandlinger">Behandlinger</a>
       <a href="#om">Om os</a>
@@ -130,12 +129,10 @@
 
       <div class="hero-art">
         <figure class="arch" data-reveal-img>
-          <img src="https://images.unsplash.com/photo-1612887390768-fb02affea7a6?auto=format&fit=crop&w=900&h=1200&q=80"
-               alt="Hånd med lyserøde franske almond-negle på hvid stof" width="900" height="1200" fetchpriority="high">
+          <img src="images/babyboomer-almond.jpg" alt="Babyboomer negle i almond-form lavet hos Servé Beauty Lounge" width="1000" height="1051" fetchpriority="high">
         </figure>
         <figure class="bubble" data-reveal-img>
-          <img src="https://images.unsplash.com/photo-1610992015762-45dca7fa3a85?auto=format&fit=crop&w=500&h=500&q=80"
-               alt="Hånd med nude manicure på blødt tæppe" width="500" height="500">
+          <img src="images/french-leopard-almond.jpg" alt="Franske almond-negle med guld og leopardmønster" width="1000" height="1333">
         </figure>
         <svg class="seal" viewBox="0 0 200 200" aria-hidden="true">
           <defs><path id="circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
@@ -149,6 +146,17 @@
         </a>
       </div>
     </section>
+
+    <!-- TILBUD (fra Instagram 2. nov. 2026 – skjules automatisk efter 30. nov.) -->
+    <aside class="promo" data-until="2026-11-30" aria-label="Tilbud i november">
+      <img src="images/tilbud-franske-november.jpg" alt="Tilbud: franske negle 350 kr hele november" width="800" height="1055" loading="lazy">
+      <div class="promo-text">
+        <p class="kicker">Tilbud i november</p>
+        <p class="promo-title">Franske negle <strong>350 kr</strong> hele november</p>
+        <p class="promo-sub">Normalpris 450 kr. Book din tid, mens der er ledige tider.</p>
+      </div>
+      <a class="btn" data-booking href="#">Book franske negle</a>
+    </aside>
 
     <!-- MARQUEE -->
     <div class="marquee" aria-hidden="true">
@@ -170,12 +178,10 @@
     <section class="about section" id="om" aria-labelledby="about-title">
       <div class="about-media">
         <figure class="about-main" data-reveal-img>
-          <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=900&h=1100&q=80"
-               alt="Negletekniker lægger gelé på en kundes negle" width="900" height="1100" loading="lazy">
+          <img src="images/french-square-sten.jpg" alt="Franske square-negle med små sten" width="1000" height="1333" loading="lazy">
         </figure>
         <figure class="about-small" data-reveal-img>
-          <img src="https://images.unsplash.com/photo-1619607146034-5a05296c8f9a?auto=format&fit=crop&w=600&h=600&q=80"
-               alt="Hylder med neglelak i mange farver" width="600" height="600" loading="lazy">
+          <img src="images/french-brun-ringe.jpg" alt="Franske negle med brun spids og guldringe" width="1000" height="1333" loading="lazy">
         </figure>
       </div>
       <div class="about-text" data-reveal>
@@ -201,7 +207,7 @@
       </div>
       <div class="service-grid">
         <article class="service" data-reveal>
-          <figure><img src="https://images.unsplash.com/photo-1630843599725-32ead7671867?auto=format&fit=crop&w=700&h=520&q=80" alt="Naturlige negle med blank gelé" width="700" height="520" loading="lazy"></figure>
+          <figure><img src="images/naturlige-square.jpg" alt="Naturlige square-negle i blød rosa" width="1000" height="1094" loading="lazy"></figure>
           <div class="service-body">
             <h3>Naturlige negle</h3>
             <p>Et rent og naturligt look, der fremhæver dine egne negle.</p>
@@ -209,7 +215,7 @@
           </div>
         </article>
         <article class="service" data-reveal>
-          <figure><img src="https://images.unsplash.com/photo-1762373349045-c2decd4ec3f3?auto=format&fit=crop&w=700&h=520&q=80" alt="Klassiske franske negle" width="700" height="520" loading="lazy"></figure>
+          <figure><img src="images/french-hvid-square.jpg" alt="Klassiske franske negle med hvid spids" width="1000" height="1118" loading="lazy"></figure>
           <div class="service-body">
             <h3>Franske / babyboomer negle</h3>
             <p>Den tidløse klassiker med hvid spids, eller som blød babyboomer-overgang.</p>
@@ -217,7 +223,7 @@
           </div>
         </article>
         <article class="service" data-reveal>
-          <figure><img src="https://images.unsplash.com/photo-1736434518489-0eb84070017f?auto=format&fit=crop&w=700&h=520&q=80" alt="Negle i én farve" width="700" height="520" loading="lazy"></figure>
+          <figure><img src="images/shimmer-almond.jpg" alt="Almond-negle i guld shimmer" width="1000" height="1333" loading="lazy"></figure>
           <div class="service-body">
             <h3>Enkelt farve</h3>
             <p>Et helt sæt i den farve, du drømmer om, lagt med præcision.</p>
@@ -225,7 +231,7 @@
           </div>
         </article>
         <article class="service" data-reveal>
-          <figure><img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=700&h=520&q=80" alt="Gelé design med glitter og flere farver" width="700" height="520" loading="lazy"></figure>
+          <figure><img src="images/french-design-sten.jpg" alt="Franske negle med sølvdesign og sten" width="1000" height="1238" loading="lazy"></figure>
           <div class="service-body">
             <h3>Gelé design</h3>
             <p>Donut-negle, chrome, charms, sten og 3D-blomster. Tre niveauer, fra 2 negle pr. hånd til avanceret design.</p>
@@ -233,7 +239,7 @@
           </div>
         </article>
         <article class="service" data-reveal>
-          <figure><img src="https://images.unsplash.com/photo-1758178309407-6562d1687b01?auto=format&fit=crop&w=700&h=520&q=80" alt="Negle i pastelfarver" width="700" height="520" loading="lazy"></figure>
+          <figure><img src="images/french-roed.jpg" alt="Franske negle med rød spids og design" width="1000" height="1333" loading="lazy"></figure>
           <div class="service-body">
             <h3>2x franske negle med veninde</h3>
             <p>Tag din veninde med, og få flotte franske negle sammen. Inkl. 2 fulde sæt.</p>
@@ -241,7 +247,7 @@
           </div>
         </article>
         <article class="service" data-reveal>
-          <figure><img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=700&h=520&q=80" alt="Plejede hænder med naturlige negle" width="700" height="520" loading="lazy"></figure>
+          <figure><img src="images/french-amber.jpg" alt="Franske negle med ravfarvet spids" width="1080" height="1245" loading="lazy"></figure>
           <div class="service-body">
             <h3>Opfyldning og aftagning</h3>
             <p>Stor opfyldning efter 3–4 uger, eller skånsom aftagning af dit gamle sæt.</p>
@@ -257,7 +263,7 @@
         <p class="kicker">Derfor Servé</p>
         <h2 id="why-title">Professionelt, personligt og nemt at booke</h2>
         <figure class="why-img" data-reveal-img>
-          <img src="https://images.unsplash.com/photo-1544816135-b44f18b3c5d6?auto=format&fit=crop&w=800&h=600&q=80" alt="Lyserød neglelak på hvid baggrund" width="800" height="600" loading="lazy">
+          <img src="images/french-leopard-almond.jpg" alt="Franske almond-negle med guld og leopardmønster" width="1000" height="1333" loading="lazy">
         </figure>
       </div>
       <div class="why-list">
@@ -302,18 +308,20 @@
     <section class="gallery section" id="galleri" aria-labelledby="gallery-title">
       <div class="section-head" data-reveal>
         <p class="kicker">Galleri</p>
-        <h2 id="gallery-title">Inspiration til dit næste sæt</h2>
-        <p>Tryk på et billede for at se det større. Se dagens design og kundebilleder på <a class="link" href="https://www.instagram.com/ss_nailstudio_/" target="_blank" rel="noopener">Instagram</a>.</p>
+        <h2 id="gallery-title">Negle fra studiet</h2>
+        <p>Alle billeder er lavet hos Servé Beauty Lounge. Tryk på et billede for at se det større. Se dagens design og kundebilleder på <a class="link" href="https://www.instagram.com/ss_nailstudio_/" target="_blank" rel="noopener">Instagram</a>.</p>
       </div>
       <div class="masonry" id="masonry">
-        <button class="tile t-tall" type="button" data-reveal><img src="https://images.unsplash.com/photo-1769687209448-025548dfca8b?auto=format&fit=crop&w=700&h=950&q=80" alt="Negle med perler og detaljer holder en plante" width="700" height="950" loading="lazy"></button>
-        <button class="tile" type="button" data-reveal><img src="https://images.unsplash.com/photo-1610992015836-7c249d75782d?auto=format&fit=crop&w=700&h=600&q=80" alt="Nude negle og guldur" width="700" height="600" loading="lazy"></button>
-        <button class="tile" type="button" data-reveal><img src="https://images.unsplash.com/photo-1630843599725-32ead7671867?auto=format&fit=crop&w=700&h=600&q=80" alt="Hvid manicure med ring" width="700" height="600" loading="lazy"></button>
-        <button class="tile t-tall" type="button" data-reveal><img src="https://images.unsplash.com/photo-1758178309407-6562d1687b01?auto=format&fit=crop&w=700&h=950&q=80" alt="Negle i pastel med halskæde" width="700" height="950" loading="lazy"></button>
-        <button class="tile" type="button" data-reveal><img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=700&h=600&q=80" alt="Mauve og glitter negle" width="700" height="600" loading="lazy"></button>
-        <button class="tile" type="button" data-reveal><img src="https://images.unsplash.com/photo-1762373349045-c2decd4ec3f3?auto=format&fit=crop&w=700&h=600&q=80" alt="Franske negle med blomst" width="700" height="600" loading="lazy"></button>
-        <button class="tile" type="button" data-reveal><img src="https://images.unsplash.com/photo-1736434518489-0eb84070017f?auto=format&fit=crop&w=700&h=600&q=80" alt="Lange nude negle med blomst" width="700" height="600" loading="lazy"></button>
-        <button class="tile" type="button" data-reveal><img src="https://images.unsplash.com/photo-1612887390768-fb02affea7a6?auto=format&fit=crop&w=700&h=600&q=80" alt="Lyserøde almond negle" width="700" height="600" loading="lazy"></button>
+        <button class="tile t-tall" type="button" data-reveal><img src="images/french-square-sten.jpg" alt="Franske square-negle med små sten" width="1000" height="1333" loading="lazy"></button>
+        <button class="tile" type="button" data-reveal><img src="images/babyboomer-almond.jpg" alt="Babyboomer negle i almond-form lavet hos Servé Beauty Lounge" width="1000" height="1051" loading="lazy"></button>
+        <button class="tile" type="button" data-reveal><img src="images/french-leopard-almond.jpg" alt="Franske almond-negle med guld og leopardmønster" width="1000" height="1333" loading="lazy"></button>
+        <button class="tile t-tall" type="button" data-reveal><img src="images/french-brun-ringe.jpg" alt="Franske negle med brun spids og guldringe" width="1000" height="1333" loading="lazy"></button>
+        <button class="tile" type="button" data-reveal><img src="images/french-hvid-square.jpg" alt="Klassiske franske negle med hvid spids" width="1000" height="1118" loading="lazy"></button>
+        <button class="tile" type="button" data-reveal><img src="images/french-roed.jpg" alt="Franske negle med rød spids og design" width="1000" height="1333" loading="lazy"></button>
+        <button class="tile" type="button" data-reveal><img src="images/shimmer-almond.jpg" alt="Almond-negle i guld shimmer" width="1000" height="1333" loading="lazy"></button>
+        <button class="tile" type="button" data-reveal><img src="images/french-design-sten.jpg" alt="Franske negle med sølvdesign og sten" width="1000" height="1238" loading="lazy"></button>
+        <button class="tile" type="button" data-reveal><img src="images/naturlige-square.jpg" alt="Naturlige square-negle i blød rosa" width="1000" height="1094" loading="lazy"></button>
+        <button class="tile" type="button" data-reveal><img src="images/french-amber.jpg" alt="Franske negle med ravfarvet spids" width="1080" height="1245" loading="lazy"></button>
       </div>
     </section>
 
@@ -445,7 +453,7 @@
 
     <!-- CTA -->
     <section class="cta" aria-labelledby="cta-title">
-      <img src="https://images.unsplash.com/photo-1602585578130-c9076e09330d?auto=format&fit=crop&w=1800&h=900&q=75" alt="" width="1800" height="900" loading="lazy">
+      <img src="images/french-amber.jpg" alt="" width="1080" height="1245" loading="lazy">
       <div class="cta-inner" data-reveal>
         <h2 id="cta-title">Klar til dine nye negle?</h2>
         <p>Se ledige tider og book direkte online.</p>
@@ -479,7 +487,7 @@
     </div>
     <div class="footer-bottom">
       <span>© <span id="year"></span> Servé Beauty Lounge, Værløse</span>
-      <span>Fotos: Unsplash</span>
+      <span>Fotos: <a class="link" href="https://www.instagram.com/ss_nailstudio_/" target="_blank" rel="noopener">@ss_nailstudio_</a></span>
     </div>
   </footer>
 

@@ -30,6 +30,11 @@ $$('[data-booking]').forEach((a) => {
 });
 $('#year').textContent = new Date().getFullYear();
 
+// Tilbud skjules automatisk efter slutdatoen (data-until).
+document.querySelectorAll('[data-until]').forEach((el) => {
+  if (new Date() > new Date(`${el.dataset.until}T23:59:59`)) el.remove();
+});
+
 /* ---------- Header + mobile menu ---------- */
 const header = $('#header');
 const onScroll = () => header.classList.toggle('scrolled', scrollY > 24);

@@ -64,7 +64,8 @@ function reveal() {
   const limit = innerHeight * 0.92;
   pending = pending.filter(({ el, probe }) => {
     const r = probe.getBoundingClientRect();
-    if (r.top < limit && r.bottom > 0) { el.classList.add('in'); return false; }
+    // Også elementer, der er scrollet forbi (fx ved hop via menuen), vises.
+    if (r.top < limit) { el.classList.add('in'); return false; }
     return true;
   });
   if (!pending.length) removeEventListener('scroll', reveal);
@@ -93,7 +94,7 @@ function runCount(el) {
 function checkCounters() {
   counters = counters.filter((el) => {
     const r = el.getBoundingClientRect();
-    if (r.top < innerHeight * 0.9 && r.bottom > 0) { runCount(el); return false; }
+    if (r.top < innerHeight * 0.9) { runCount(el); return false; }
     return true;
   });
   if (!counters.length) removeEventListener('scroll', checkCounters);

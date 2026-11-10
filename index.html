@@ -7,7 +7,8 @@
   <meta name="description" content="Servé Beauty Lounge er en neglesalon i Værløse med certificeret negletekniker. Naturlige negle, franske/babyboomer negle og gelé design fra 400 kr. Book din tid online.">
   <meta name="keywords" content="neglesalon Værløse, negle Værløse, gelé negle, franske negle, babyboomer negle, nail art, gelé design, negletekniker Værløse">
   <link rel="canonical" href="https://serve-beauty-lounge.vercel.app/">
-  <meta name="theme-color" content="#f7f2f3">
+  <meta name="theme-color" content="#f6efe6">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <!-- DEMO: fjern noindex og .demo-badge, når rigtige anmeldelser er sat ind. -->
   <meta name="robots" content="noindex, nofollow">
 
@@ -21,8 +22,12 @@
 
   <link rel="preconnect" href="https://api.fontshare.com">
   <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
-  <!-- Switzer fra Fontshare (gratis til kommerciel brug) – én skrift til hele siden -->
-  <link href="https://api.fontshare.com/v2/css?f[]=switzer@200,300,400,500,600&display=swap" rel="stylesheet">
+  <!-- Switzer fra Fontshare (gratis til kommerciel brug) til brødtekst -->
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600&display=swap" rel="stylesheet">
+  <!-- Marcellus (Google Fonts): romersk serif der matcher logoet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
   <!-- Struktureret data: oplysninger fra salonens Instagram og Planway (8. nov. 2026). -->
@@ -92,7 +97,7 @@
 
   <header class="site-header" id="header">
     <a class="logo" href="#top" aria-label="Servé Beauty Lounge, forside">
-      <span class="logo-mark">Servé</span><span class="logo-sub">Beauty Lounge</span>
+      <img class="logo-icon" src="images/logo-mark.svg" alt="" width="40" height="40"><img class="logo-word" src="images/logo-wordmark-dark.svg" alt="Servé Beauty Lounge" width="150" height="58">
     </a>
     <span class="demo-badge" title="Anmeldelserne er eksempler">Demo</span>
     <nav class="nav" id="nav" aria-label="Hovedmenu">
@@ -134,12 +139,7 @@
         <figure class="bubble" data-reveal-img>
           <img src="images/french-leopard-almond.jpg" alt="Franske almond-negle med guld og leopardmønster" width="1000" height="1333">
         </figure>
-        <svg class="seal" viewBox="0 0 200 200" aria-hidden="true">
-          <defs><path id="circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
-          <text><textPath href="#circle" textLength="488">SERVÉ BEAUTY LOUNGE ✦ VÆRLØSE ✦ NAILS ✦ </textPath></text>
-          <circle cx="100" cy="100" r="34" class="seal-dot"/>
-          <text x="100" y="112" text-anchor="middle" class="seal-s">S</text>
-        </svg>
+        <figure class="seal" aria-hidden="true"><img src="images/logo-mark.svg" alt="" width="120" height="120"></figure>
         <a class="float-card" data-booking href="#">
           <strong>Se ledige tider</strong>
           <span>Book online på Planway</span>
@@ -167,11 +167,12 @@
     </div>
 
     <!-- FACTS -->
-    <section class="stats" aria-label="Servé i korte træk">
-      <div class="stat" data-reveal><strong><span data-count="10">0</span></strong><span>behandlinger at vælge imellem</span></div>
-      <div class="stat" data-reveal><strong>3</strong><span>niveauer af gelé design</span></div>
-      <div class="stat" data-reveal><strong>fra <span data-count="150">0</span> kr</strong><span>for aftagning ved nyt sæt</span></div>
-      <div class="stat" data-reveal><strong>24/7</strong><span>online booking</span></div>
+    <section class="facts" aria-label="Servé i korte træk">
+      <div data-reveal><strong>Certificeret</strong><span>negletekniker</span></div>
+      <div data-reveal><strong>10 behandlinger</strong><span>fra 150 kr</span></div>
+      <div data-reveal><strong>Gelé design</strong><span>i tre niveauer</span></div>
+      <div data-reveal><strong>Book online</strong><span>døgnet rundt på Planway</span></div>
+      <div data-reveal><strong>Værløse</strong><span>Kirke Værløsevej 34</span></div>
     </section>
 
     <!-- ABOUT -->
@@ -194,7 +195,24 @@
           <li>Gelé design i tre niveauer, fra enkelt til avanceret</li>
           <li>Se dagens design og kundebilleder på Instagram</li>
         </ul>
-        <p class="signature">Servé</p>
+        <img class="signature" src="images/logo-mark.svg" alt="" width="72" height="72">
+      </div>
+    </section>
+
+    <!-- OWNER / CERTIFICATE (billede og tekst fra ejeren sættes ind, når vi får dem) -->
+    <section class="owner" aria-labelledby="owner-title">
+      <div class="owner-inner">
+        <figure class="owner-portrait" data-reveal>
+          <img src="images/logo-mark.svg" alt="" width="160" height="160">
+          <figcaption>Billede af ejeren kommer her</figcaption>
+        </figure>
+        <div class="owner-text" data-reveal>
+          <p class="kicker">Bag Servé</p>
+          <h2 id="owner-title">Certificeret negletekniker med øje for detaljen</h2>
+          <p>Bag Servé Beauty Lounge står en uddannet og certificeret negletekniker, der brænder for smukke, holdbare negle. Hvert sæt formes og lægges med ro, præcision og respekt for dine egne negle.</p>
+          <p>Har du et billede af dit drømmelook, så send det på Instagram, så finder vi den rigtige behandling sammen.</p>
+          <a class="link link-light" href="https://www.instagram.com/ss_nailstudio_/" target="_blank" rel="noopener">Skriv på Instagram</a>
+        </div>
       </div>
     </section>
 
@@ -465,7 +483,7 @@
   <footer class="site-footer">
     <div class="footer-grid">
       <div class="footer-brand">
-        <p class="logo-mark">Servé</p>
+        <img class="footer-logo" src="images/logo.svg" alt="Servé Beauty Lounge" width="200" height="219" loading="lazy">
         <p>Neglesalon i Værløse. Naturlige negle, franske negle og gelé design hos en certificeret negletekniker.</p>
       </div>
       <nav aria-label="Sidefod">

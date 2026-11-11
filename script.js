@@ -111,7 +111,6 @@ checkCounters();
 /* ---------- Hero parallax ---------- */
 if (!reduceMotion) {
   const arch = $('.arch img');
-  const bubble = $('.bubble');
   let ticking = false;
   addEventListener('scroll', () => {
     if (ticking) return;
@@ -119,7 +118,6 @@ if (!reduceMotion) {
     requestAnimationFrame(() => {
       const y = Math.min(scrollY, 1000);
       arch.style.translate = `0 ${y * 0.08}px`;
-      bubble.style.translate = `0 ${y * -0.12}px`;
       ticking = false;
     });
   }, { passive: true });

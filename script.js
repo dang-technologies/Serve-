@@ -110,14 +110,14 @@ checkCounters();
 
 /* ---------- Hero parallax ---------- */
 if (!reduceMotion) {
-  const arch = $('.arch img');
+  const arch = $('.hero-bg img');
   let ticking = false;
   addEventListener('scroll', () => {
     if (ticking) return;
     ticking = true;
     requestAnimationFrame(() => {
       const y = Math.min(scrollY, 1000);
-      arch.style.translate = `0 ${y * 0.08}px`;
+      arch.style.translate = `0 ${y * -0.08}px`;
       ticking = false;
     });
   }, { passive: true });

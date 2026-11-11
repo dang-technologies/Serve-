@@ -192,11 +192,9 @@ body:not(.menu-open) .site-header:not(.scrolled) .logo img { filter: drop-shadow
 
 /* ---------- About ---------- */
 .about { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 7vw, 110px); align-items: center; }
-.about-media { position: relative; padding: 0 14% 14% 0; }
+.about-media { position: relative; max-width: 480px; justify-self: center; width: 100%; }
 .about-main { margin: 0; border-radius: 999px 999px 0 0; overflow: hidden; }
 .about-main img { width: 100%; aspect-ratio: 9 / 11; object-fit: cover; }
-.about-small { position: absolute; right: 0; bottom: 0; width: 44%; margin: 0; border-radius: 50%; overflow: hidden; border: 6px solid var(--cream); aspect-ratio: 3 / 4; }
-.about-small img { width: 100%; height: 100%; object-fit: cover; }
 .about-text h2 { margin-bottom: 22px; }
 .about-text p:not(.kicker) { color: var(--ink-soft); margin-top: 16px; max-width: 54ch; }
 .checks { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 12px; }
@@ -227,7 +225,7 @@ body:not(.menu-open) .site-header:not(.scrolled) .logo img { filter: drop-shadow
 
 /* ---------- Why ---------- */
 .why { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(40px, 7vw, 110px); align-items: start; }
-.why-img { margin: 36px 0 0; border-radius: 50%; overflow: hidden; aspect-ratio: 3 / 4; max-width: 380px; }
+.why-img { margin: 36px 0 0; border-radius: 999px 999px 0 0; overflow: hidden; aspect-ratio: 3 / 4; max-width: 380px; }
 .why-img img { width: 100%; height: 100%; object-fit: cover; }
 .why-list { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); }
 .why-item { padding: 34px 30px; background: var(--cream); }

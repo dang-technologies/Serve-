@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servé Beauty Lounge – Skønhedssalon i Værløse | Gelé, franske negle & nail art</title>
+  <meta name="description" content="Servé Beauty Lounge er en skønhedssalon i Værløse med certificeret negletekniker. Naturlige negle, franske/babyboomer negle, gelé design og pedicure fra 200 kr. Book din tid online.">
+  <meta name="keywords" content="skønhedssalon Værløse, neglesalon Værløse, negle Værløse, gelé negle, franske negle, babyboomer negle, nail art, gelé design, negletekniker Værløse, pedicure Værløse">
+  <link rel="canonical" href="https://serve-beauty-lounge.vercel.app/">
+  <meta name="theme-color" content="#f6efe6">
+  <link rel="icon" href="favicon.svg?v=20261113" type="image/svg+xml">
+  <!-- Fjern noindex (her og i vercel.json), når rigtige anmeldelser er sat ind. -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:site_name" content="Servé Beauty Lounge">
+  <meta property="og:title" content="Servé Beauty Lounge – Skønhedssalon i Værløse">
+  <meta property="og:description" content="Naturlige negle, franske negle og gelé design i Værløse. Book din tid online.">
+  <meta property="og:image" content="https://serve-beauty-lounge.vercel.app/images/gele-sten-blomster.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <!-- Switzer fra Fontshare (gratis til kommerciel brug) til brødtekst -->
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600&display=swap" rel="stylesheet">
+  <!-- Marcellus (Google Fonts): romersk serif der matcher logoet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261116a">
+
+  <!-- Struktureret data: oplysninger fra salonens Instagram og Planway (8. nov. 2026). -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Servé Beauty Lounge",
+    "url": "https://serve-beauty-lounge.vercel.app/",
+    "image": "https://serve-beauty-lounge.vercel.app/images/gele-sten-blomster.jpg",
+    "description": "Skønhedssalon i Værløse med certificeret negletekniker. Naturlige negle, franske/babyboomer negle, gelé design og pedicure.",
+    "telephone": {{{tel_json}}},
+    "priceRange": {{{price_range_json}}},
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": {{{adresse_json}}},
+      "postalCode": {{{postnr_json}}},
+      "addressLocality": {{{by_json}}},
+      "addressCountry": "DK"
+    },
+    "areaServed": ["Værløse", "Furesø"],
+    "sameAs": {{{same_as_jsonld}}},
+    "potentialAction": { "@type": "ReserveAction", "target": "https://servebeautylounge.planway.com/" },
+    "hasOfferCatalog": { "@type": "OfferCatalog", "name": "Behandlinger", "itemListElement": {{{offers_jsonld}}} }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": {{{faq_jsonld}}}
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Spring til indhold</a>
+
+  <!-- Levende baggrund -->
+  <div class="aura" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <a class="logo" href="#top" aria-label="Servé Beauty Lounge, forside">
+      <img class="logo-word" src="images/logo-wordmark-dark.svg?v=20261113" alt="Servé Beauty Lounge" width="231" height="78"><img class="logo-word logo-word-light" src="images/logo-wordmark.svg?v=20261113" alt="" width="231" height="78">
+    </a>
+    <nav class="nav" id="nav" aria-label="Hovedmenu">
+      <a href="#behandlinger">Behandlinger</a>
+      <a href="#om">Om os</a>
+      <a href="#galleri">Galleri</a>
+      <a href="#priser">Priser</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="btn btn-small nav-cta" data-booking href="#">Book tid</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span class="sr">Menu</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <figure class="hero-bg">
+        {{{hero_billede}}}
+      </figure>
+      <div class="hero-text">
+        <p class="kicker" data-load>{{hero_kicker}}</p>
+        <h1 id="hero-title" data-load>{{hero_titel}}</h1>
+        <p class="lede" data-load>{{hero_tekst}}</p>
+        <div class="hero-actions" data-load>
+          <a class="btn btn-light" data-booking href="#">Book tid</a>
+        </div>
+      </div>
+    </section>
+
+{{{tilbud}}}
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Naturlige negle</span><i>✦</i><span>Franske negle</span><i>✦</i><span>Babyboomer</span><i>✦</i><span>Gelé design</span><i>✦</i><span>Pedicure</span><i>✦</i><span>Chrome</span><i>✦</i><span>3D-blomster</span><i>✦</i>
+        <span>Naturlige negle</span><i>✦</i><span>Franske negle</span><i>✦</i><span>Babyboomer</span><i>✦</i><span>Gelé design</span><i>✦</i><span>Pedicure</span><i>✦</i><span>Chrome</span><i>✦</i><span>3D-blomster</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- FACTS -->
+    <section class="facts" aria-label="Servé i korte træk">
+{{{fakta}}}
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="om" aria-labelledby="about-title">
+      <div class="about-media">
+        <figure class="about-main" data-reveal-img>
+          {{{om_billede}}}
+        </figure>
+      </div>
+      <div class="about-text" data-reveal>
+        <p class="kicker">Om Servé</p>
+        <h2 id="about-title">{{om_overskrift}}</h2>
+{{{om_afsnit}}}
+        <ul class="checks">
+{{{om_punkter}}}
+        </ul>
+        <img class="signature" src="images/logo-mark.svg?v=20261113" alt="" width="48" height="85">
+      </div>
+    </section>
+
+    <!-- OWNER / CERTIFICATE (billede og tekst fra ejeren sættes ind, når vi får dem) -->
+    <section class="owner" aria-labelledby="owner-title">
+      <div class="owner-inner">
+{{{ejer_portraet}}}
+        <div class="owner-text" data-reveal>
+          <p class="kicker">Bag Servé</p>
+          <h2 id="owner-title">{{ejer_overskrift}}</h2>
+{{{ejer_afsnit}}}
+          <a class="link link-light" href="{{instagram}}" target="_blank" rel="noopener">Skriv på Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services section" id="behandlinger" aria-labelledby="services-title">
+      <div class="section-head" data-reveal>
+        <p class="kicker">Behandlinger</p>
+        <h2 id="services-title">Negle til enhver stil</h2>
+        <p>{{behandlinger_intro}}</p>
+      </div>
+      <div class="service-grid">
+{{{behandlinger}}}
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section class="why section" aria-labelledby="why-title">
+      <div class="why-intro" data-reveal>
+        <p class="kicker">Derfor Servé</p>
+        <h2 id="why-title">Professionelt, personligt og nemt at booke</h2>
+        <figure class="why-img" data-reveal-img>
+          <img src="images/french-leopard-almond.jpg" alt="Franske almond-negle med guld og leopardmønster" width="1000" height="1333" loading="lazy">
+        </figure>
+      </div>
+      <div class="why-list">
+        <div class="why-item" data-reveal>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          <h3>Certificeret negletekniker</h3>
+          <p>Uddannet til at arbejde med gelé, design og pleje af dine negle.</p>
+        </div>
+        <div class="why-item" data-reveal>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg>
+          <h3>Design i tre niveauer</h3>
+          <p>Fra få detaljer til avanceret nail art. Du vælger, hvor meget det skal være.</p>
+        </div>
+        <div class="why-item" data-reveal>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <h3>Book når det passer dig</h3>
+          <p>Se ledige tider og book online på Planway, døgnet rundt.</p>
+        </div>
+        <div class="why-item" data-reveal>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.5"/><circle cx="16.8" cy="7.2" r=".6"/></svg>
+          <h3>Personlig rådgivning</h3>
+          <p>I tvivl om, hvad du skal booke? Send en DM på Instagram, så hjælper vi.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process section" aria-labelledby="process-title">
+      <div class="section-head center" data-reveal>
+        <p class="kicker">Sådan foregår det</p>
+        <h2 id="process-title">Fra booking til færdige negle</h2>
+      </div>
+      <ol class="steps">
+        <li data-reveal><span class="step-no">1</span><h3>Find dit look</h3><p>Se dagens design på Instagram, eller send os et billede af det, du drømmer om.</p></li>
+        <li data-reveal><span class="step-no">2</span><h3>Book online</h3><p>Vælg behandling og tid på Planway. Du får en bekræftelse med det samme.</p></li>
+        <li data-reveal><span class="step-no">3</span><h3>Behandling</h3><p>Vi former, plejer og lægger gelé eller design. Læn dig tilbage og nyd det.</p></li>
+        <li data-reveal><span class="step-no">4</span><h3>Opfyldning</h3><p>Efter 3–4 uger booker du en opfyldning, så neglene holder sig friske.</p></li>
+      </ol>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery section" id="galleri" aria-labelledby="gallery-title">
+      <div class="section-head" data-reveal>
+        <p class="kicker">Galleri</p>
+        <h2 id="gallery-title">Negle fra salonen</h2>
+        <p>Alle billeder er lavet hos Servé Beauty Lounge. Tryk på et billede for at se det større. Se dagens design og kundebilleder på <a class="link" href="{{instagram}}" target="_blank" rel="noopener">Instagram</a>.</p>
+      </div>
+      <div class="masonry" id="masonry">
+{{{galleri}}}
+      </div>
+    </section>
+
+    <!-- PRICES -->
+    <section class="prices section" id="priser" aria-labelledby="prices-title">
+      <div class="prices-card" data-reveal>
+        <div class="section-head">
+          <p class="kicker">Prisliste</p>
+          <h2 id="prices-title">Priser</h2>
+          <p>{{pris_intro}}</p>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Priskategori" id="tabs">
+{{{pris_faner}}}
+          <span class="tab-ink" aria-hidden="true"></span>
+        </div>
+{{{pris_paneler}}}
+        <p class="price-note">{{pris_note}}</p>
+        <a class="btn" data-booking href="#">Book en behandling</a>
+      </div>
+    </section>
+
+{{{anmeldelser}}}
+
+    <!-- FAQ -->
+    <section class="faq section" id="faq" aria-labelledby="faq-title">
+      <div class="faq-intro" data-reveal>
+        <p class="kicker">Spørgsmål og svar</p>
+        <h2 id="faq-title">Godt at vide før dit besøg</h2>
+        <p>Finder du ikke dit svar, så skriv til os på <a class="link" href="{{instagram}}" target="_blank" rel="noopener">Instagram</a> eller ring på <a class="link" href="tel:{{tel_e164}}">{{telefon}}</a>.</p>
+      </div>
+      <div class="faq-list" data-reveal>
+{{{faq}}}
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="kontakt" aria-labelledby="contact-title">
+      <div class="contact-info" data-reveal>
+        <p class="kicker">Find os</p>
+        <h2 id="contact-title">Besøg os i Værløse</h2>
+        <div class="contact-grid">
+          <div>
+            <h3>Adresse</h3>
+            <address>{{adresse}}<br>{{postnr_by}}</address>
+          </div>
+          <div>
+            <h3>Kontakt</h3>
+            <p><a class="link" href="tel:{{tel_e164}}">{{telefon}}</a></p>
+          </div>
+          <div>
+            <h3>Tider</h3>
+            <p>{{tider}} Se alle ledige tider i <a class="link" data-booking href="#">bookingen</a>.</p>
+          </div>
+          <div>
+            <h3>Følg os</h3>
+            <p class="socials">
+              <a class="link" href="{{instagram}}" target="_blank" rel="noopener">Instagram</a>
+              <a class="link" href="{{tiktok}}" target="_blank" rel="noopener">TikTok</a>
+              <a class="link" href="{{facebook}}" target="_blank" rel="noopener">Facebook</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="map" data-reveal>
+        <div class="map-art" aria-hidden="true">
+          <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><path d="M0 210 C80 190 120 240 210 200 S330 150 400 170" /><path d="M60 0 C90 80 70 160 120 300" /><path d="M260 0 C250 90 300 170 280 300" /><path d="M0 90 C120 110 260 60 400 100" /></svg>
+          <span class="pin"></span>
+        </div>
+        <p class="map-label">{{adresse}}, {{postnr_by}}</p>
+        <a class="btn btn-light" href="{{maps_url}}" target="_blank" rel="noopener">Åbn i Google Maps</a>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" aria-labelledby="cta-title">
+      <img src="images/french-amber.jpg" alt="" width="1080" height="1245" loading="lazy">
+      <div class="cta-inner" data-reveal>
+        <h2 id="cta-title">Klar til dine nye negle?</h2>
+        <p>Se ledige tider og book direkte online.</p>
+        <a class="btn btn-light" data-booking href="#">Book tid nu</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img class="footer-logo" src="images/logo.svg?v=20261113" alt="Servé Beauty Lounge" width="326" height="153" loading="lazy">
+        <p>Skønhedssalon i Værløse. Naturlige negle, franske negle og gelé design hos en certificeret negletekniker.</p>
+      </div>
+      <nav aria-label="Sidefod">
+        <h3>Menu</h3>
+        <a href="#behandlinger">Behandlinger</a><a href="#priser">Priser</a><a href="#galleri">Galleri</a><a href="#faq">FAQ</a>
+      </nav>
+      <div>
+        <h3>Kontakt</h3>
+        <p>{{adresse}}<br>{{postnr_by}}<br><a class="link" href="tel:{{tel_e164}}">{{telefon}}</a></p>
+      </div>
+      <div>
+        <h3>Følg os</h3>
+        <p class="socials">
+          <a class="link" href="{{instagram}}" target="_blank" rel="noopener">Instagram</a>
+          <a class="link" href="{{tiktok}}" target="_blank" rel="noopener">TikTok</a>
+          <a class="link" href="{{facebook}}" target="_blank" rel="noopener">Facebook</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Servé Beauty Lounge, Værløse</span>
+      <span>Fotos: <a class="link" href="{{instagram}}" target="_blank" rel="noopener">{{instagram_handle}}</a></span>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <dialog class="lightbox" id="lightbox" aria-label="Billede">
+    <img id="lightbox-img" alt="">
+    <button type="button" class="round lb-close" id="lb-close" aria-label="Luk"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js?v=20261116a"></script>
+</body>
+</html>

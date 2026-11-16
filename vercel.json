@@ -1,4 +1,6 @@
 {
+  "buildCommand": "node tools/build.mjs",
+  "outputDirectory": "dist",
   "headers": [
     { "source": "/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }
   ]

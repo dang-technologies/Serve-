@@ -1,0 +1,68 @@
+{
+  "intro": "Alle behandlinger bookes online. Længde op til 4 magneter er med i prisen; 5–7 magneter +50 kr. og 8–10 magneter +100 kr.",
+  "behandlinger": [
+    {
+      "navn": "Naturlige negle",
+      "tekst": "Gelé på dine egne negle, eller med tip for lidt ekstra længde. Et rent og naturligt look.",
+      "pris": "250–300 kr",
+      "tid": "60 min",
+      "billede": "images/french-square-ring.jpg",
+      "billede_alt": "Square-negle i blød rosa med hvid spids og en række små sten",
+      "fokus": ""
+    },
+    {
+      "navn": "Franske / babyboomer negle",
+      "tekst": "Den tidløse klassiker med hvid spids, eller som blød babyboomer-overgang.",
+      "pris": "400 kr",
+      "tid": "90 min",
+      "billede": "images/french-square-hjerter.jpg",
+      "billede_alt": "Franske square-negle med hvid spids og små guldhjerter",
+      "fokus": "50% 28%"
+    },
+    {
+      "navn": "Enkelt farve",
+      "tekst": "Et helt sæt i den farve, du drømmer om, lagt med præcision.",
+      "pris": "450 kr",
+      "tid": "120 min",
+      "billede": "images/french-leopard-brun.jpg",
+      "billede_alt": "Almond-negle i nude med brun leopard-spids",
+      "fokus": ""
+    },
+    {
+      "navn": "Gelé design",
+      "tekst": "Chrome, charms, sten og 3D-blomster. Fra simpelt design på 1–2 fingre pr. hånd til kompliceret design i lvl 3.",
+      "pris": "450–600 kr",
+      "tid": "120–150 min",
+      "billede": "images/gele-blomst-guld.jpg",
+      "billede_alt": "Gelé design med 3D-blomster, guldkant og sten",
+      "fokus": ""
+    },
+    {
+      "navn": "2x franske negle med veninde",
+      "tekst": "Tag din veninde med, og få flotte franske negle sammen. Inkl. 2 fulde sæt.",
+      "pris": "700 kr",
+      "tid": "120 min",
+      "billede": "images/french-square-sten.jpg",
+      "billede_alt": "Franske square-negle med små sten",
+      "fokus": ""
+    },
+    {
+      "navn": "Opfyldning og aftagning",
+      "tekst": "Opfyldning efter 2–4 uger, eller skånsom aftagning af dit gamle sæt.",
+      "pris": "fra 150 kr",
+      "tid": "45–90 min",
+      "billede": "images/french-brun-ringe.jpg",
+      "billede_alt": "Franske negle med brun spids og guldringe",
+      "fokus": ""
+    },
+    {
+      "navn": "Pedicure",
+      "tekst": "Pæne tånegle i naturlig, helfarve eller fransk. Skal der tipper på, er det 50 kr. ekstra.",
+      "pris": "200–300 kr",
+      "tid": "",
+      "billede": "images/pedicure-fransk.jpg",
+      "billede_alt": "Fransk pedicure med hvid spids",
+      "fokus": ""
+    }
+  ]
+}

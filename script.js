@@ -154,40 +154,42 @@ addEventListener('resize', moveInk);
 document.fonts?.ready.then(moveInk);
 moveInk();
 
-/* ---------- Reviews slider ---------- */
-const slides = $('#slides');
-const reviewEls = $$('.review', slides);
-const dots = $('#dots');
-let current = 0;
-let timer;
-dots.innerHTML = reviewEls.map((_, i) => `<button type="button" aria-label="Anmeldelse ${i + 1}"></button>`).join('');
-function go(i) {
-  current = (i + reviewEls.length) % reviewEls.length;
-  reviewEls.forEach((r, k) => {
-    r.classList.toggle('active', k === current);
-    r.setAttribute('aria-hidden', k !== current);
-  });
-  $$('button', dots).forEach((d, k) => d.setAttribute('aria-current', k === current));
+/* ---------- Reviews slider (sektionen kan være slået fra i Pages CMS) ---------- */
+if ($('#slides')) {
+  const slides = $('#slides');
+  const reviewEls = $$('.review', slides);
+  const dots = $('#dots');
+  let current = 0;
+  let timer;
+  dots.innerHTML = reviewEls.map((_, i) => `<button type="button" aria-label="Anmeldelse ${i + 1}"></button>`).join('');
+  function go(i) {
+    current = (i + reviewEls.length) % reviewEls.length;
+    reviewEls.forEach((r, k) => {
+      r.classList.toggle('active', k === current);
+      r.setAttribute('aria-hidden', k !== current);
+    });
+    $$('button', dots).forEach((d, k) => d.setAttribute('aria-current', k === current));
+  }
+  function auto() {
+    clearInterval(timer);
+    if (!reduceMotion) timer = setInterval(() => go(current + 1), 6500);
+  }
+  $$('[data-slide]').forEach((b) => b.addEventListener('click', () => { go(current + Number(b.dataset.slide)); auto(); }));
+  $$('button', dots).forEach((d, k) => d.addEventListener('click', () => { go(k); auto(); }));
+  $('#slider').addEventListener('mouseenter', () => clearInterval(timer));
+  $('#slider').addEventListener('mouseleave', auto);
+  // Swipe på mobil
+  let touchX = null;
+  slides.addEventListener('touchstart', (e) => { touchX = e.touches[0].clientX; }, { passive: true });
+  slides.addEventListener('touchend', (e) => {
+    if (touchX === null) return;
+    const dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 40) { go(current + (dx < 0 ? 1 : -1)); auto(); }
+    touchX = null;
+  }, { passive: true });
+  go(0);
+  auto();
 }
-function auto() {
-  clearInterval(timer);
-  if (!reduceMotion) timer = setInterval(() => go(current + 1), 6500);
-}
-$$('[data-slide]').forEach((b) => b.addEventListener('click', () => { go(current + Number(b.dataset.slide)); auto(); }));
-$$('button', dots).forEach((d, k) => d.addEventListener('click', () => { go(k); auto(); }));
-$('#slider').addEventListener('mouseenter', () => clearInterval(timer));
-$('#slider').addEventListener('mouseleave', auto);
-// Swipe på mobil
-let touchX = null;
-slides.addEventListener('touchstart', (e) => { touchX = e.touches[0].clientX; }, { passive: true });
-slides.addEventListener('touchend', (e) => {
-  if (touchX === null) return;
-  const dx = e.changedTouches[0].clientX - touchX;
-  if (Math.abs(dx) > 40) { go(current + (dx < 0 ? 1 : -1)); auto(); }
-  touchX = null;
-}, { passive: true });
-go(0);
-auto();
 
 /* ---------- FAQ: én åben ad gangen ---------- */
 $$('.faq details').forEach((d) => d.addEventListener('toggle', () => {

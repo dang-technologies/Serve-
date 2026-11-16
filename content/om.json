@@ -1,0 +1,25 @@
+{
+  "om": {
+    "overskrift": "En skønhedssalon i Værløse, hvor detaljerne betyder alt",
+    "afsnit": [
+      "Servé Beauty Lounge er en lille, personlig skønhedssalon på Kirke Værløsevej. Her bliver du behandlet af en certificeret negletekniker, der tager sig tid til at gøre hvert sæt rigtigt.",
+      "Du kan vælge alt fra rene naturlige negle og klassiske franske eller babyboomer negle til gelé design med chrome, charms, sten og 3D-blomster. Er du i tvivl om, hvad du skal booke, så skriv en DM på Instagram."
+    ],
+    "punkter": [
+      "Certificeret negletekniker",
+      "Gelé design i tre niveauer, fra enkelt til avanceret",
+      "Se dagens design og kundebilleder på Instagram"
+    ],
+    "billede": "images/french-square-sten.jpg",
+    "billede_alt": "Franske square-negle med små sten"
+  },
+  "ejer": {
+    "overskrift": "Certificeret negletekniker med øje for detaljen",
+    "afsnit": [
+      "Bag Servé Beauty Lounge står en uddannet og certificeret negletekniker, der brænder for smukke, holdbare negle. Hvert sæt formes og lægges med ro, præcision og respekt for dine egne negle.",
+      "Har du et billede af dit drømmelook, så send det på Instagram, så finder vi den rigtige behandling sammen."
+    ],
+    "billede": "",
+    "billede_alt": ""
+  }
+}

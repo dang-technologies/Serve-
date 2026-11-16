@@ -1,0 +1,44 @@
+{
+  "intro": "Salonens aktuelle priser.",
+  "kategorier": [
+    {
+      "navn": "Negle",
+      "priser": [
+        { "navn": "Gelé på egne negle", "detaljer": "60 min · naturlig", "pris": "250 kr" },
+        { "navn": "Gelé med tip", "detaljer": "naturlig", "pris": "300 kr" },
+        { "navn": "Franske / babyboomer negle", "detaljer": "90 min", "pris": "400 kr" },
+        { "navn": "Enkelt farve", "detaljer": "120 min", "pris": "450 kr" },
+        { "navn": "2x franske negle, veninder", "detaljer": "120 min · 2 fulde sæt", "pris": "700 kr" }
+      ]
+    },
+    {
+      "navn": "Gelé design",
+      "priser": [
+        { "navn": "Simpel design", "detaljer": "1 eller 2 fingre pr. hånd", "pris": "450 kr" },
+        { "navn": "Gelé design lvl 1", "detaljer": "120 min · mere end 2 fingre eller alle", "pris": "500 kr" },
+        { "navn": "Gelé design lvl 2", "detaljer": "120 min · flere steps i designet", "pris": "550 kr" },
+        { "navn": "Gelé design lvl 3", "detaljer": "150 min · kompliceret design", "pris": "600 kr" }
+      ]
+    },
+    {
+      "navn": "Opfyldning",
+      "priser": [
+        { "navn": "Opfyldning franske 2–3 uger", "detaljer": "", "pris": "300 kr" },
+        { "navn": "Opfyldning franske 3–4 uger", "detaljer": "90 min", "pris": "350 kr" },
+        { "navn": "Opfyldning design", "detaljer": "original pris minus 50 kr", "pris": "−50 kr" },
+        { "navn": "Aftagning", "detaljer": "45 min", "pris": "200 kr" },
+        { "navn": "Aftagning ved nyt sæt", "detaljer": "45 min", "pris": "150 kr" }
+      ]
+    },
+    {
+      "navn": "Pedicure",
+      "priser": [
+        { "navn": "Pedicure, naturlig", "detaljer": "", "pris": "200 kr" },
+        { "navn": "Pedicure, helfarve", "detaljer": "", "pris": "250 kr" },
+        { "navn": "Pedicure, franske", "detaljer": "", "pris": "300 kr" },
+        { "navn": "Tipper på tæerne", "detaljer": "tillæg", "pris": "+50 kr" }
+      ]
+    }
+  ],
+  "note": "Længde: 0–4 magneter er med i prisen, 5–7 magneter +50 kr., 8–10 magneter +100 kr."
+}

@@ -1,0 +1,208 @@
+# Pages CMS (https://pagescms.org): the salon edits the website here (SRV-20261116-01).
+# Every save is a commit to master; Vercel then rebuilds the site with tools/build.mjs.
+media:
+  input: images
+  output: images
+
+content:
+  - name: priser
+    label: Priser
+    type: file
+    path: content/priser.json
+    format: json
+    fields:
+      - name: intro
+        label: Tekst over prislisten
+        type: string
+      - name: kategorier
+        label: Faner i prislisten
+        type: object
+        list: true
+        fields:
+          - name: navn
+            label: Fanens navn
+            type: string
+            required: true
+          - name: priser
+            label: Priser
+            type: object
+            list: true
+            fields:
+              - name: navn
+                label: Behandling
+                type: string
+                required: true
+              - name: detaljer
+                label: Lille tekst (fx "90 min")
+                type: string
+              - name: pris
+                label: Pris (fx "400 kr")
+                type: string
+                required: true
+      - name: note
+        label: Note under prislisten
+        type: text
+
+  - name: behandlinger
+    label: Behandlinger (kort med billede)
+    type: file
+    path: content/behandlinger.json
+    format: json
+    fields:
+      - name: intro
+        label: Tekst over behandlingerne
+        type: text
+      - name: behandlinger
+        label: Behandlinger
+        type: object
+        list: true
+        fields:
+          - name: navn
+            label: Navn
+            type: string
+            required: true
+          - name: tekst
+            label: Beskrivelse
+            type: text
+          - name: pris
+            label: Pris (fx "250–300 kr")
+            type: string
+          - name: tid
+            label: Tid (fx "60 min")
+            type: string
+          - name: billede
+            label: Billede
+            type: image
+            required: true
+          - name: billede_alt
+            label: Kort beskrivelse af billedet (til Google og blinde)
+            type: string
+          - name: fokus
+            label: Billedets fokus (avanceret, fx "50% 30%" – lad stå tomt)
+            type: string
+
+  - name: galleri
+    label: Galleri
+    type: file
+    path: content/galleri.json
+    format: json
+    fields:
+      - name: billeder
+        label: Billeder (træk for at ændre rækkefølgen)
+        type: object
+        list: true
+        fields:
+          - name: billede
+            label: Billede
+            type: image
+            required: true
+          - name: billede_alt
+            label: Kort beskrivelse af billedet
+            type: string
+          - name: hoej
+            label: Vis som højt billede med bue
+            type: boolean
+
+  - name: forside
+    label: Forside og tilbud
+    type: file
+    path: content/forside.json
+    format: json
+    fields:
+      - name: hero
+        label: Øverst på siden
+        type: object
+        fields:
+          - { name: kicker, label: Lille tekst over overskriften, type: string }
+          - { name: titel, label: Overskrift, type: string }
+          - { name: tekst, label: Tekst, type: text }
+          - { name: billede, label: Stort billede, type: image }
+          - { name: billede_alt, label: Kort beskrivelse af billedet, type: string }
+      - name: tilbud
+        label: Tilbud
+        type: object
+        fields:
+          - { name: vis, label: Vis tilbuddet, type: boolean }
+          - { name: slutdato, label: Skjul automatisk efter denne dato, type: date }
+          - { name: kicker, label: Lille tekst (fx "Tilbud i november"), type: string }
+          - { name: titel, label: 'Overskrift (skriv **350 kr** for at fremhæve)', type: string }
+          - { name: tekst, label: Tekst, type: string }
+          - { name: knap, label: Tekst på knappen, type: string }
+          - { name: billede, label: Billede, type: image }
+          - { name: billede_alt, label: Kort beskrivelse af billedet, type: string }
+      - name: fakta
+        label: Korte fakta under billedet
+        type: object
+        list: true
+        fields:
+          - { name: fed, label: Fed tekst, type: string }
+          - { name: tekst, label: Tekst, type: string }
+
+  - name: om
+    label: Om salonen og ejeren
+    type: file
+    path: content/om.json
+    format: json
+    fields:
+      - name: om
+        label: Om Servé
+        type: object
+        fields:
+          - { name: overskrift, label: Overskrift, type: string }
+          - { name: afsnit, label: Afsnit, type: text, list: true }
+          - { name: punkter, label: Punkter med flueben, type: string, list: true }
+          - { name: billede, label: Billede, type: image }
+          - { name: billede_alt, label: Kort beskrivelse af billedet, type: string }
+      - name: ejer
+        label: Om ejeren
+        type: object
+        fields:
+          - { name: overskrift, label: Overskrift, type: string }
+          - { name: afsnit, label: Afsnit, type: text, list: true }
+          - { name: billede, label: Billede af ejeren (tomt = logo), type: image }
+          - { name: billede_alt, label: Kort beskrivelse af billedet, type: string }
+
+  - name: anmeldelser
+    label: Anmeldelser
+    type: file
+    path: content/anmeldelser.json
+    format: json
+    fields:
+      - { name: vis, label: Vis anmeldelser på siden, type: boolean }
+      - { name: undertekst, label: Lille tekst under overskriften (tomt = ingen), type: string }
+      - name: anmeldelser
+        label: Anmeldelser
+        type: object
+        list: true
+        fields:
+          - { name: tekst, label: Anmeldelse, type: text, required: true }
+          - { name: navn, label: Kundens navn (fx "Maria"), type: string }
+          - { name: behandling, label: Behandling, type: string }
+
+  - name: faq
+    label: Spørgsmål og svar
+    type: file
+    path: content/faq.json
+    format: json
+    fields:
+      - name: spoergsmaal
+        label: Spørgsmål
+        type: object
+        list: true
+        fields:
+          - { name: spoergsmaal, label: Spørgsmål, type: string, required: true }
+          - { name: svar, label: Svar, type: text, required: true }
+
+  - name: kontakt
+    label: Kontakt og links
+    type: file
+    path: content/kontakt.json
+    format: json
+    fields:
+      - { name: telefon, label: Telefon, type: string }
+      - { name: adresse, label: Adresse, type: string }
+      - { name: postnr_by, label: Postnummer og by, type: string }
+      - { name: tider, label: Åbningstider, type: string }
+      - { name: instagram, label: Instagram-link, type: string }
+      - { name: tiktok, label: TikTok-link, type: string }
+      - { name: facebook, label: Facebook-link, type: string }

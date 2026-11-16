@@ -207,6 +207,7 @@ body:not(.menu-open) .site-header:not(.scrolled) .logo img { filter: drop-shadow
 .owner-portrait { margin: 0; justify-self: center; display: grid; justify-items: center; gap: 14px; }
 .owner-portrait img { width: min(320px, 70vw); aspect-ratio: 1; object-fit: contain; border-radius: 50%; padding: 28%; background: var(--choco-2); box-shadow: 0 0 0 1px rgb(220 195 145 / .35), 0 0 0 14px var(--choco), 0 0 0 15px rgb(220 195 145 / .2); }
 .owner-portrait figcaption { font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; color: var(--taupe-light); }
+.owner-photo img { object-fit: cover; padding: 0; }
 .owner h2 { color: #fff; margin-bottom: 22px; }
 .owner-text p:not(.kicker) { color: #dccfbf; margin-top: 14px; max-width: 54ch; }
 .owner .kicker { color: var(--gold-light); }

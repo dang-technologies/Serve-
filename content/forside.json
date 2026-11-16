@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "kicker": "Skønhedssalon i Værløse",
+    "titel": "Smukke negle, lavet med omhu",
+    "tekst": "Naturlige negle, franske negle og gelé design hos en certificeret negletekniker på Kirke Værløsevej.",
+    "billede": "images/gele-sten-blomster.jpg",
+    "billede_alt": "Gelé design med blomster af farvede sten på almond-negle, lavet hos Servé Beauty Lounge"
+  },
+  "tilbud": {
+    "vis": true,
+    "slutdato": "2026-11-30",
+    "kicker": "Tilbud i november",
+    "titel": "Franske negle **350 kr** hele november",
+    "tekst": "Normalpris 400 kr. Book din tid, mens der er ledige tider.",
+    "knap": "Book franske negle",
+    "billede": "images/tilbud-franske-november.jpg",
+    "billede_alt": "Tilbud: franske negle 350 kr hele november"
+  },
+  "fakta": [
+    { "fed": "Certificeret", "tekst": "negletekniker" },
+    { "fed": "Negle og pedicure", "tekst": "fra 150 kr" },
+    { "fed": "Gelé design", "tekst": "i tre niveauer" },
+    { "fed": "Book online", "tekst": "døgnet rundt på Planway" },
+    { "fed": "Værløse", "tekst": "Kirke Værløsevej 34" }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "vis": true,
+  "undertekst": "Eksempler. Rigtige anmeldelser og kundebilleder sættes ind her.",
+  "anmeldelser": [
+    { "tekst": "Mine franske negle holdt flot hele vejen til opfyldningen. Og så er stemningen i salonen helt utrolig rolig.", "navn": "Kunde", "behandling": "Franske negle" },
+    { "tekst": "Jeg sendte et billede på Instagram, og resultatet blev præcis, som jeg havde drømt om.", "navn": "Kunde", "behandling": "Gelé design lvl 2" },
+    { "tekst": "Vi tog afsted to veninder og fik lavet negle sammen. En rigtig hyggelig eftermiddag.", "navn": "Kunde", "behandling": "2x franske negle" }
+  ]
+}

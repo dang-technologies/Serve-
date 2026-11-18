@@ -56,11 +56,6 @@
       "hoej": false
     },
     {
-      "billede": "images/french-roed.jpg",
-      "billede_alt": "Franske negle med rød spids og design",
-      "hoej": false
-    },
-    {
       "billede": "images/shimmer-almond.jpg",
       "billede_alt": "Almond-negle i guld shimmer",
       "hoej": false
@@ -68,7 +63,7 @@
     {
       "billede": "images/IMG_7136-1.jpeg",
       "billede_alt": "Grønne franske med polka dots ",
-      "hoej": false
+      "hoej": true
     },
     {
       "billede": "images/IMG_7118-1.jpeg",

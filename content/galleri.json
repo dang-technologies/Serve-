@@ -1,20 +1,84 @@
 {
   "billeder": [
-    { "billede": "images/french-square-ring.jpg", "billede_alt": "Square-negle i blød rosa med hvid spids og en række små sten", "hoej": true },
-    { "billede": "images/gele-blomst-guld.jpg", "billede_alt": "Gelé design med 3D-blomster, guldkant og sten", "hoej": false },
-    { "billede": "images/gele-sten-blomster.jpg", "billede_alt": "Gelé design med blomster af farvede sten på almond-negle", "hoej": false },
-    { "billede": "images/pedicure-fransk.jpg", "billede_alt": "Fransk pedicure med hvid spids", "hoej": false },
-    { "billede": "images/french-square-hjerter.jpg", "billede_alt": "Franske square-negle med hvid spids og små guldhjerter", "hoej": true },
-    { "billede": "images/french-leopard-brun.jpg", "billede_alt": "Almond-negle med brun leopard-spids", "hoej": false },
-    { "billede": "images/french-square-sten.jpg", "billede_alt": "Franske square-negle med små sten", "hoej": true },
-    { "billede": "images/babyboomer-almond.jpg", "billede_alt": "Babyboomer negle i almond-form lavet hos Servé Beauty Lounge", "hoej": false },
-    { "billede": "images/french-leopard-almond.jpg", "billede_alt": "Franske almond-negle med guld og leopardmønster", "hoej": false },
-    { "billede": "images/french-brun-ringe.jpg", "billede_alt": "Franske negle med brun spids og guldringe", "hoej": true },
-    { "billede": "images/french-hvid-square.jpg", "billede_alt": "Klassiske franske negle med hvid spids", "hoej": false },
-    { "billede": "images/french-roed.jpg", "billede_alt": "Franske negle med rød spids og design", "hoej": false },
-    { "billede": "images/shimmer-almond.jpg", "billede_alt": "Almond-negle i guld shimmer", "hoej": false },
-    { "billede": "images/french-design-sten.jpg", "billede_alt": "Franske negle med sølvdesign og sten", "hoej": false },
-    { "billede": "images/naturlige-square.jpg", "billede_alt": "Naturlige square-negle i blød rosa", "hoej": false },
-    { "billede": "images/french-amber.jpg", "billede_alt": "Franske negle med ravfarvet spids", "hoej": false }
+    {
+      "billede": "images/french-square-ring.jpg",
+      "billede_alt": "Square-negle i blød rosa med hvid spids og en række små sten",
+      "hoej": true
+    },
+    {
+      "billede": "images/gele-blomst-guld.jpg",
+      "billede_alt": "Gelé design med 3D-blomster, guldkant og sten",
+      "hoej": false
+    },
+    {
+      "billede": "images/gele-sten-blomster.jpg",
+      "billede_alt": "Gelé design med blomster af farvede sten på almond-negle",
+      "hoej": false
+    },
+    {
+      "billede": "images/pedicure-fransk.jpg",
+      "billede_alt": "Fransk pedicure med hvid spids",
+      "hoej": false
+    },
+    {
+      "billede": "images/french-square-hjerter.jpg",
+      "billede_alt": "Franske square-negle med hvid spids og små guldhjerter",
+      "hoej": true
+    },
+    {
+      "billede": "images/french-leopard-brun.jpg",
+      "billede_alt": "Almond-negle med brun leopard-spids",
+      "hoej": false
+    },
+    {
+      "billede": "images/french-square-sten.jpg",
+      "billede_alt": "Franske square-negle med små sten",
+      "hoej": true
+    },
+    {
+      "billede": "images/babyboomer-almond.jpg",
+      "billede_alt": "Babyboomer negle i almond-form lavet hos Servé Beauty Lounge",
+      "hoej": false
+    },
+    {
+      "billede": "images/IMG_7133-1.jpeg",
+      "billede_alt": "Rød helfarve",
+      "hoej": false
+    },
+    {
+      "billede": "images/french-brun-ringe.jpg",
+      "billede_alt": "Franske negle med brun spids og guldringe",
+      "hoej": true
+    },
+    {
+      "billede": "images/french-hvid-square.jpg",
+      "billede_alt": "Klassiske franske negle med hvid spids",
+      "hoej": false
+    },
+    {
+      "billede": "images/french-roed.jpg",
+      "billede_alt": "Franske negle med rød spids og design",
+      "hoej": false
+    },
+    {
+      "billede": "images/shimmer-almond.jpg",
+      "billede_alt": "Almond-negle i guld shimmer",
+      "hoej": false
+    },
+    {
+      "billede": "images/IMG_7136-1.jpeg",
+      "billede_alt": "Grønne franske med polka dots ",
+      "hoej": false
+    },
+    {
+      "billede": "images/naturlige-square.jpg",
+      "billede_alt": "Naturlige square-negle i blød rosa",
+      "hoej": false
+    },
+    {
+      "billede": "images/french-amber.jpg",
+      "billede_alt": "Franske negle med ravfarvet spids",
+      "hoej": false
+    }
   ]
 }

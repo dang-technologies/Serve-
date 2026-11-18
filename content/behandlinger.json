@@ -7,8 +7,7 @@
       "pris": "250–300 kr",
       "tid": "60 min",
       "billede": "images/french-square-ring.jpg",
-      "billede_alt": "Square-negle i blød rosa med hvid spids og en række små sten",
-      "fokus": ""
+      "billede_alt": "Square-negle i blød rosa med hvid spids og en række små sten"
     },
     {
       "navn": "Franske / babyboomer negle",
@@ -24,9 +23,8 @@
       "tekst": "Et helt sæt i den farve, du drømmer om, lagt med præcision.",
       "pris": "450 kr",
       "tid": "120 min",
-      "billede": "images/french-leopard-brun.jpg",
-      "billede_alt": "Almond-negle i nude med brun leopard-spids",
-      "fokus": ""
+      "billede": "images/IMG_7133.jpeg",
+      "billede_alt": "Almonbrun leopard-spids"
     },
     {
       "navn": "Gelé design",
@@ -34,8 +32,7 @@
       "pris": "450–600 kr",
       "tid": "120–150 min",
       "billede": "images/gele-blomst-guld.jpg",
-      "billede_alt": "Gelé design med 3D-blomster, guldkant og sten",
-      "fokus": ""
+      "billede_alt": "Gelé design med 3D-blomster, guldkant og sten"
     },
     {
       "navn": "2x franske negle med veninde",
@@ -43,8 +40,7 @@
       "pris": "700 kr",
       "tid": "120 min",
       "billede": "images/french-square-sten.jpg",
-      "billede_alt": "Franske square-negle med små sten",
-      "fokus": ""
+      "billede_alt": "Franske square-negle med små sten"
     },
     {
       "navn": "Opfyldning og aftagning",
@@ -52,17 +48,14 @@
       "pris": "fra 150 kr",
       "tid": "45–90 min",
       "billede": "images/french-brun-ringe.jpg",
-      "billede_alt": "Franske negle med brun spids og guldringe",
-      "fokus": ""
+      "billede_alt": "Franske negle med brun spids og guldringe"
     },
     {
       "navn": "Pedicure",
       "tekst": "Pæne tånegle i naturlig, helfarve eller fransk. Skal der tipper på, er det 50 kr. ekstra.",
       "pris": "200–300 kr",
-      "tid": "",
       "billede": "images/pedicure-fransk.jpg",
-      "billede_alt": "Fransk pedicure med hvid spids",
-      "fokus": ""
+      "billede_alt": "Fransk pedicure med hvid spids"
     }
   ]
 }
